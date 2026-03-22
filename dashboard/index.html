@@ -15,7 +15,7 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      /* Backgrounds */
+      /* Backgrounds — dark (default) */
       --color-bg-primary:    #0a0a0f;
       --color-bg-secondary:  #12121a;
       --color-bg-tertiary:   #1a1a28;
@@ -44,12 +44,46 @@
       --color-amber:         #eab308;
       --color-orange:        #f97316;
 
+      /* Header bg (separate for rgba handling) */
+      --header-bg: rgba(10, 10, 15, 0.95);
+      --header-border: rgba(255, 255, 255, 0.1);
+
       /* Layout */
       --card-radius: 16px;
       --font-display: 'Bebas Neue', sans-serif;
       --font-body: 'DM Sans', sans-serif;
       --safe-top: env(safe-area-inset-top, 0px);
       --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    /* === LIGHT MODE === */
+    [data-theme="light"] {
+      --color-bg-primary:    #f8f9fa;
+      --color-bg-secondary:  #ffffff;
+      --color-bg-tertiary:   #e9ecef;
+      --color-bg-card:       #ffffff;
+      --color-bg-elevated:   #f1f3f5;
+      --color-bg-input:      #f1f3f4;
+
+      --color-text-primary:  #1a1a2e;
+      --color-text-secondary: #495057;
+      --color-text-muted:    #6c757d;
+
+      --color-border:        #dee2e6;
+      --color-border-light:  #e9ecef;
+
+      --color-accent:        #c41e3a;
+      --color-accent-hover:  #a01830;
+      --color-accent-soft:   #fdf2f4;
+      --color-text-inverse:  #ffffff;
+
+      --color-green:         #16a34a;
+      --color-green-monster: #006847;
+      --color-amber:         #ca8a04;
+      --color-orange:        #ea580c;
+
+      --header-bg: rgba(248, 249, 250, 0.95);
+      --header-border: rgba(0, 0, 0, 0.08);
     }
 
     html {
@@ -79,6 +113,35 @@
       z-index: 0;
     }
 
+    /* Light mode: tone down background glow */
+    [data-theme="light"] body::before {
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(196,30,58,0.03) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(196,30,58,0.02) 0%, transparent 40%);
+    }
+
+    /* Light mode: softer card shadows */
+    [data-theme="light"] .game-card:hover {
+      box-shadow: 0 10px 15px rgba(0,0,0,0.08), 0 4px 6px rgba(0,0,0,0.04);
+    }
+
+    /* Light mode: darker select chevron */
+    [data-theme="light"] .sort-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    }
+
+    /* Light mode: deal price glow toned down */
+    [data-theme="light"] .game-card.has-deal .best-price {
+      text-shadow: none;
+    }
+
+    /* Theme transition on key elements */
+    html, body, header, .game-card, .card-detail, .price-source-card,
+    .velocity-row, .filter-pill, .filters, .sort-select, .date-block,
+    .skeleton-card, .theme-toggle, .buy-link, .offline-banner {
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
     /* === SCROLLBAR === */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--color-bg-tertiary); }
@@ -106,13 +169,50 @@
       position: sticky;
       top: 0;
       z-index: 40;
-      background: rgba(10, 10, 15, 0.95);
+      background: var(--header-bg);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid var(--header-border);
       padding: calc(var(--safe-top) + 20px) 20px 16px;
       text-align: center;
+      /* anchor for theme toggle absolute positioning */
     }
+
+    /* Theme toggle */
+    .theme-toggle {
+      position: absolute;
+      right: 16px;
+      top: calc(var(--safe-top) + 20px);
+      background: var(--color-bg-tertiary);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .theme-toggle:hover {
+      background: var(--color-bg-elevated);
+    }
+    .theme-toggle svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--color-text-secondary);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.3s ease;
+    }
+    /* Show sun in dark mode, moon in light */
+    .icon-sun { display: block; }
+    .icon-moon { display: none; }
+    [data-theme="light"] .icon-sun { display: none; }
+    [data-theme="light"] .icon-moon { display: block; }
 
     .header-eyebrow {
       font-family: var(--font-body);
@@ -672,6 +772,10 @@
     <h1>FENWAY TICKET TRACKER</h1>
     <div class="header-divider"></div>
     <div class="last-updated" id="lastUpdated"></div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
   </header>
 
   <div class="filters" id="filters">
@@ -748,8 +852,26 @@
     let activeFilters = new Set();
     let currentSort = 'date';
 
+    // ── Theme ──
+    function initTheme() {
+      const saved = localStorage.getItem('theme') || 'dark';
+      applyTheme(saved);
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        applyTheme(next);
+        localStorage.setItem('theme', next);
+      });
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.content = theme === 'light' ? '#f8f9fa' : '#0a0a0f';
+    }
+
     // ── Boot ──
     async function init() {
+      initTheme();
       registerSW();
       detectOffline();
       bindFilters();
