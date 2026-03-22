@@ -6,6 +6,7 @@ import { fetchTicketmaster } from './sources/ticketmaster.js';
 import { scrapeTmPrices } from './sources/ticketmaster-scraper.js';
 import { fetchSeatGeek } from './sources/seatgeek.js';
 import { fetchWeather } from './sources/weather.js';
+import { fetchMlbTickets } from './sources/mlb-tickets.js';
 
 async function main() {
   const config = await loadConfig();
@@ -35,8 +36,9 @@ async function main() {
 
   console.log(`\n${upcomingGames.length} upcoming home games within ${config.check_days_ahead} days\n`);
 
-  // 3. Fetch weather for qualifying games
+  // 3. Fetch weather and primary market links
   const weatherMap = await fetchWeather(upcomingGames, config);
+  const mlbTicketsMap = await fetchMlbTickets();
 
   // 4. Load historical data for velocity calculation
   const historyMap = await loadHistory(config.velocity_window_days);
@@ -64,7 +66,7 @@ async function main() {
   for (let i = 0; i < upcomingGames.length; i++) {
     const game = upcomingGames[i];
     try {
-      const record = await buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited, weatherMap, historyMap);
+      const record = await buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited, weatherMap, historyMap, mlbTicketsMap);
       gameRecords.push(record);
       if (record.tickets.ticketmaster) tmCount++;
       if (record.tickets.seatgeek) sgCount++;
@@ -143,7 +145,7 @@ async function main() {
   console.log(`Wrote data/latest.json and data/history/${today}.json\n`);
 }
 
-async function buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited, weatherMap, historyMap) {
+async function buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited, weatherMap, historyMap, mlbTicketsMap) {
   // Ticketmaster (per-game, always runs)
   const tmData = await fetchTicketmaster(game, tmApiKey);
 
@@ -158,6 +160,10 @@ async function buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited
       sgData = result;
     }
   }
+
+  // Primary market (mlb.tickets.com) — sold-out status + buy link
+  const scheduleId = game.game_id.replace('mlb-', '');
+  const primaryMarket = mlbTicketsMap.get(scheduleId) || null;
 
   // Weather
   const weather = weatherMap.get(game.date) || { forecast_available: false };
@@ -184,6 +190,7 @@ async function buildGameRecord(game, config, tmApiKey, sgClientId, sgRateLimited
       ticketmaster: tmData,
       seatgeek: sgData,
     },
+    primary_market: primaryMarket,
     best_available: bestAvailable,
     price_alert: priceAlert,
     weather,

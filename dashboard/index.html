@@ -502,6 +502,11 @@
       color: var(--color-amber);
       border-color: rgba(234, 179, 8, 0.3);
     }
+    .badge-soldout {
+      background: rgba(255,255,255,0.08);
+      color: var(--color-muted);
+      border-color: rgba(255,255,255,0.15);
+    }
     .badge-rivalry {
       background: rgba(239, 68, 68, 0.12);
       color: #f87171;
@@ -777,6 +782,14 @@
     }
     .buy-link-sg:hover {
       background: var(--color-bg-elevated);
+    }
+    .buy-link-primary {
+      background: #1a4731;
+      color: #4ade80;
+      border: 1px solid rgba(74,222,128,0.2);
+    }
+    .buy-link-primary:hover {
+      background: #1e5a3a;
     }
     .buy-link.disabled {
       opacity: 0.3;
@@ -1224,6 +1237,7 @@
       if (hasDeal) badges += '<span class="badge badge-deal">Deal</span>';
       if (game.velocity?.direction === 'falling') badges += '<span class="badge badge-falling">Falling</span>';
       if (game.is_preferred_day) badges += '<span class="badge badge-weekend">Weekend</span>';
+      if (game.primary_market?.sold_out) badges += '<span class="badge badge-soldout">Sold Out</span>';
       if (RIVALRY_TEAMS.includes(game.opponent)) badges += '<span class="badge badge-rivalry">Rivalry</span>';
 
       // Weather — promote rain/cold to badge row
@@ -1416,6 +1430,13 @@
       }
 
       // Buy links
+      const pm = game.primary_market;
+      let primaryLink = '';
+      if (pm?.sold_out) {
+        primaryLink = `<span class="buy-link buy-link-primary disabled">MLB.com (Sold Out)</span>`;
+      } else if (pm?.primary_url) {
+        primaryLink = `<a class="buy-link buy-link-primary" href="${pm.primary_url}" target="_blank" rel="noopener">MLB.com (Face Value)</a>`;
+      }
       const tmLink = tm?.listing_url
         ? `<a class="buy-link buy-link-tm" href="${tm.listing_url}" target="_blank" rel="noopener">Ticketmaster</a>`
         : `<span class="buy-link buy-link-tm disabled">Ticketmaster</span>`;
@@ -1429,7 +1450,7 @@
           <div class="price-compare">${tmCard}${sgCard}</div>
           ${sectionHtml}
           ${velocityHtml}
-          <div class="buy-links">${tmLink}${sgLink}</div>
+          <div class="buy-links">${primaryLink}${tmLink}${sgLink}</div>
         </div>`;
     }
 
