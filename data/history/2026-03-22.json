@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T03:02:40.266Z",
+  "generated_at": "2026-03-22T03:20:56.128Z",
   "games": [
     {
       "game_id": "mlb-824786",
@@ -18,7 +18,7 @@
         "ticketmaster_scraped": {
           "min_price": 137,
           "max_price": 2743,
-          "total_listings": 3028,
+          "total_listings": 3038,
           "inventory_types": [
             "resale"
           ],
@@ -106,7 +106,7 @@
         "ticketmaster_scraped": {
           "min_price": 38,
           "max_price": 2635,
-          "total_listings": 3235,
+          "total_listings": 3225,
           "inventory_types": [
             "resale"
           ],
@@ -127,10 +127,10 @@
         "forecast_available": true
       },
       "velocity": {
-        "direction": "stable",
-        "change_7d": 0,
-        "change_pct_7d": 0,
-        "trend": "stable"
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
       }
     },
     {
@@ -438,6 +438,473 @@
         "change_7d": 0,
         "change_pct_7d": 0,
         "trend": "stable"
+      }
+    },
+    {
+      "game_id": "mlb-824774",
+      "date": "2026-04-22",
+      "day_of_week": "Wednesday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 55,
+          "max_price": 3429,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fe",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 55,
+          "max_price": 3429,
+          "total_listings": 4343,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 55,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824770",
+      "date": "2026-04-23",
+      "day_of_week": "Thursday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 68,
+          "max_price": 2918,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fd",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 68,
+          "max_price": 2918,
+          "total_listings": 3789,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 68,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824772",
+      "date": "2026-05-01",
+      "day_of_week": "Friday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 37,
+          "max_price": 6930,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F7",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 37,
+          "max_price": 6930,
+          "total_listings": 3736,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 37,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824771",
+      "date": "2026-05-02",
+      "day_of_week": "Saturday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 49,
+          "max_price": 2332,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fk",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 49,
+          "max_price": 2332,
+          "total_listings": 3691,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 49,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824769",
+      "date": "2026-05-03",
+      "day_of_week": "Sunday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 35,
+          "max_price": 2682,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FF",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 35,
+          "max_price": 2682,
+          "total_listings": 3397,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 35,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824767",
+      "date": "2026-05-07",
+      "day_of_week": "Thursday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 33,
+          "max_price": 1627,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F8",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 1627,
+          "total_listings": 3337,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824768",
+      "date": "2026-05-08",
+      "day_of_week": "Friday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 35,
+          "max_price": 2982,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F3",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 35,
+          "max_price": 2982,
+          "total_listings": 3563,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 35,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824766",
+      "date": "2026-05-09",
+      "day_of_week": "Saturday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 46,
+          "max_price": 3628,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Ff",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 46,
+          "max_price": 3628,
+          "total_listings": 3555,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 46,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824765",
+      "date": "2026-05-10",
+      "day_of_week": "Sunday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 33,
+          "max_price": 3558,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fp",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 3558,
+          "total_listings": 3431,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824764",
+      "date": "2026-05-12",
+      "day_of_week": "Tuesday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 47,
+          "max_price": 1395,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F9",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 47,
+          "max_price": 1395,
+          "total_listings": 3320,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 47,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824763",
+      "date": "2026-05-13",
+      "day_of_week": "Wednesday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 47,
+          "max_price": 1395,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fb",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 47,
+          "max_price": 1395,
+          "total_listings": 3433,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 47,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824762",
+      "date": "2026-05-14",
+      "day_of_week": "Thursday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F_",
+          "source": "primary"
+        },
+        "seatgeek": null
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
       }
     }
   ]
