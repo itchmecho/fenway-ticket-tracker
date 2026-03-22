@@ -17,11 +17,20 @@ export async function fetchTicketmaster(game, apiKey) {
   const endDate = `${game.date}T23:59:59Z`;
   const url = `${BASE_URL}/events.json?apikey=${apiKey}&venueId=${FENWAY_VENUE_ID}&classificationName=baseball&startDateTime=${startDate}&endDateTime=${endDate}&size=5`;
 
-  const res = await fetch(url);
+  let res = await fetch(url);
+
+  // Retry once on 429 with backoff
+  if (res.status === 429) {
+    const retryAfter = parseInt(res.headers.get('retry-after') || '5', 10);
+    const waitMs = Math.min(retryAfter * 1000, 30000);
+    console.warn(`[Ticketmaster] Rate limited (429) for ${game.date} — waiting ${waitMs / 1000}s...`);
+    await new Promise(r => setTimeout(r, waitMs));
+    res = await fetch(url);
+  }
 
   if (!res.ok) {
     if (res.status === 429) {
-      console.warn(`[Ticketmaster] Rate limited (429) for ${game.date} — skipping`);
+      console.warn(`[Ticketmaster] Still rate limited for ${game.date} — skipping`);
       return null;
     }
     console.warn(`[Ticketmaster] HTTP ${res.status} for ${game.date} — skipping`);

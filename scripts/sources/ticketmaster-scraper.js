@@ -36,14 +36,37 @@ export async function scrapeTmPrices(eventIds) {
       userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     });
 
-    for (const { game_id, tm_event_id } of eventIds) {
-      try {
-        const data = await scrapeEventPage(tm_event_id);
-        if (data) {
-          results.set(game_id, data);
+    // Process in batches of 10 with a pause between batches
+    const BATCH_SIZE = 10;
+    for (let i = 0; i < eventIds.length; i += BATCH_SIZE) {
+      const batch = eventIds.slice(i, i + BATCH_SIZE);
+      const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+      const totalBatches = Math.ceil(eventIds.length / BATCH_SIZE);
+
+      if (totalBatches > 1) {
+        console.log(`[TM-Scraper] Batch ${batchNum}/${totalBatches} (${batch.length} events)`);
+      }
+
+      for (const { game_id, tm_event_id } of batch) {
+        try {
+          const data = await scrapeEventPage(tm_event_id);
+          if (data) {
+            results.set(game_id, data);
+          }
+        } catch (err) {
+          console.warn(`[TM-Scraper] Error on ${tm_event_id}: ${err.message}`);
         }
-      } catch (err) {
-        console.warn(`[TM-Scraper] Error on ${tm_event_id}: ${err.message}`);
+      }
+
+      // Pause between batches to avoid bot detection
+      if (i + BATCH_SIZE < eventIds.length) {
+        console.log(`[TM-Scraper] Pausing 10s between batches...`);
+        await new Promise(r => setTimeout(r, 10000));
+        // Fresh browser context for next batch
+        if (_context) await _context.close();
+        _context = await _browser.newContext({
+          userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        });
       }
     }
 

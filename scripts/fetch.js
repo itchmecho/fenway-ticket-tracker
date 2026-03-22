@@ -77,8 +77,8 @@ async function main() {
       console.error(`[ERROR] Failed to process ${game.date} vs ${game.opponent}: ${err.message}`);
     }
 
-    // 500ms delay between games for SeatGeek rate limiting
-    if (sgClientId && !sgRateLimited && i < upcomingGames.length - 1) {
+    // Delay between games to avoid rate limits (TM Discovery + SeatGeek)
+    if (i < upcomingGames.length - 1) {
       await sleep(500);
     }
   }

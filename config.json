@@ -14,7 +14,7 @@
   "min_quantity": 2,
   "price_alert_threshold": 75,
   "preferred_days": ["Saturday", "Sunday"],
-  "check_days_ahead": 30,
+  "check_days_ahead": 60,
   "weather_forecast_window_days": 14,
   "velocity_window_days": 7
 }
