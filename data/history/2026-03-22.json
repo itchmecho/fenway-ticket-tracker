@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T03:23:25.934Z",
+  "generated_at": "2026-03-22T04:00:02.222Z",
   "games": [
     {
       "game_id": "mlb-824786",
@@ -9,18 +9,31 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 134,
+          "max_price": 2743,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8ko",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 134,
+          "max_price": 2743,
+          "total_listings": 3036,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": null,
         "sold_out": true
       },
-      "best_available": null,
+      "best_available": {
+        "price": 134,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
       "price_alert": false,
       "weather": {
         "high_temp_f": 55,
@@ -44,19 +57,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 58,
+          "max_price": 1834,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k3",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 58,
+          "max_price": 1834,
+          "total_listings": 3102,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681643",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 58,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "high_temp_f": 72,
         "precipitation_in": 0,
@@ -79,19 +105,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 38,
+          "max_price": 2635,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kK",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 38,
+          "max_price": 2635,
+          "total_listings": 3225,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681644",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 38,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "high_temp_f": 75,
         "precipitation_in": 0.04,
@@ -114,19 +153,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 21,
+          "max_price": 1853,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kf",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 21,
+          "max_price": 1853,
+          "total_listings": 3212,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681645",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 21,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -145,19 +197,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 17,
+          "max_price": 1235,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k4",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 17,
+          "max_price": 1235,
+          "total_listings": 3194,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681646",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 17,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -176,19 +241,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 17,
+          "max_price": 1327,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kp",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 17,
+          "max_price": 1327,
+          "total_listings": 3066,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681647",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 17,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -207,19 +285,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 26,
+          "max_price": 1385,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k9",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 26,
+          "max_price": 1385,
+          "total_listings": 3915,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681648",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 26,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -238,19 +329,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 43,
+          "max_price": 2063,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kb",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 43,
+          "max_price": 2063,
+          "total_listings": 4073,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681649",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 43,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -300,19 +404,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 69,
+          "max_price": 2294,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FZ",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 69,
+          "max_price": 2294,
+          "total_listings": 3632,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681651",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 69,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -331,19 +448,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 64,
+          "max_price": 5548,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fv",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 64,
+          "max_price": 5548,
+          "total_listings": 4052,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681652",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 64,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -362,19 +492,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 55,
+          "max_price": 3429,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fe",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 55,
+          "max_price": 3429,
+          "total_listings": 4343,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681653",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 55,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -393,19 +536,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 68,
+          "max_price": 2918,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fd",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 68,
+          "max_price": 2918,
+          "total_listings": 3789,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681654",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 68,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -424,19 +580,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 37,
+          "max_price": 6930,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F7",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 37,
+          "max_price": 6930,
+          "total_listings": 3736,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681655",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 37,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -455,19 +624,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 49,
+          "max_price": 2332,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fk",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 49,
+          "max_price": 2332,
+          "total_listings": 3691,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681656",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 49,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -486,19 +668,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 35,
+          "max_price": 2682,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FF",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 35,
+          "max_price": 2682,
+          "total_listings": 3397,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681657",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 35,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -517,19 +712,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 33,
+          "max_price": 1627,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F8",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 1627,
+          "total_listings": 3333,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681658",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -548,19 +756,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 35,
+          "max_price": 2982,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F3",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 35,
+          "max_price": 2982,
+          "total_listings": 3563,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681659",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 35,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -579,19 +800,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 46,
+          "max_price": 3628,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Ff",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 46,
+          "max_price": 3628,
+          "total_listings": 3555,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681660",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 46,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -610,19 +844,32 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 33,
+          "max_price": 3558,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fp",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 3558,
+          "total_listings": 3423,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681661",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -641,19 +888,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 47,
+          "max_price": 1395,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F9",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 47,
+          "max_price": 1395,
+          "total_listings": 3320,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681662",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 47,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
@@ -672,19 +932,32 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": null,
-          "max_price": null,
+          "min_price": 46,
+          "max_price": 1395,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fb",
           "source": "primary"
         },
-        "seatgeek": null
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 46,
+          "max_price": 1395,
+          "total_listings": 3433,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
       },
       "primary_market": {
         "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681663",
         "sold_out": false
       },
-      "best_available": null,
-      "price_alert": false,
+      "best_available": {
+        "price": 46,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
       "weather": {
         "forecast_available": false
       },
