@@ -1,6 +1,6 @@
 {
   "name": "fenway-ticket-tracker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Serverless Red Sox ticket price tracker — GitHub Actions + GitHub Pages PWA",
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
   "engines": {
     "node": ">=18"
   },
+  "private": true,
   "dependencies": {
-    "node-fetch": "^3.0.0"
-  },
-  "private": true
+    "playwright": "^1.58.2"
+  }
 }

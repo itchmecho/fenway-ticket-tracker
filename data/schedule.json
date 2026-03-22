@@ -1,0 +1,488 @@
+[
+  {
+    "game_id": "mlb-824786",
+    "date": "2026-04-03",
+    "day_of_week": "Friday",
+    "opponent": "San Diego Padres"
+  },
+  {
+    "game_id": "mlb-824782",
+    "date": "2026-04-04",
+    "day_of_week": "Saturday",
+    "opponent": "San Diego Padres"
+  },
+  {
+    "game_id": "mlb-824781",
+    "date": "2026-04-05",
+    "day_of_week": "Sunday",
+    "opponent": "San Diego Padres"
+  },
+  {
+    "game_id": "mlb-824783",
+    "date": "2026-04-06",
+    "day_of_week": "Monday",
+    "opponent": "Milwaukee Brewers"
+  },
+  {
+    "game_id": "mlb-824780",
+    "date": "2026-04-07",
+    "day_of_week": "Tuesday",
+    "opponent": "Milwaukee Brewers"
+  },
+  {
+    "game_id": "mlb-824779",
+    "date": "2026-04-08",
+    "day_of_week": "Wednesday",
+    "opponent": "Milwaukee Brewers"
+  },
+  {
+    "game_id": "mlb-824778",
+    "date": "2026-04-17",
+    "day_of_week": "Friday",
+    "opponent": "Detroit Tigers"
+  },
+  {
+    "game_id": "mlb-824775",
+    "date": "2026-04-18",
+    "day_of_week": "Saturday",
+    "opponent": "Detroit Tigers"
+  },
+  {
+    "game_id": "mlb-824777",
+    "date": "2026-04-19",
+    "day_of_week": "Sunday",
+    "opponent": "Detroit Tigers"
+  },
+  {
+    "game_id": "mlb-824776",
+    "date": "2026-04-20",
+    "day_of_week": "Monday",
+    "opponent": "Detroit Tigers"
+  },
+  {
+    "game_id": "mlb-824773",
+    "date": "2026-04-21",
+    "day_of_week": "Tuesday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824774",
+    "date": "2026-04-22",
+    "day_of_week": "Wednesday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824770",
+    "date": "2026-04-23",
+    "day_of_week": "Thursday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824772",
+    "date": "2026-05-01",
+    "day_of_week": "Friday",
+    "opponent": "Houston Astros"
+  },
+  {
+    "game_id": "mlb-824771",
+    "date": "2026-05-02",
+    "day_of_week": "Saturday",
+    "opponent": "Houston Astros"
+  },
+  {
+    "game_id": "mlb-824769",
+    "date": "2026-05-03",
+    "day_of_week": "Sunday",
+    "opponent": "Houston Astros"
+  },
+  {
+    "game_id": "mlb-824767",
+    "date": "2026-05-07",
+    "day_of_week": "Thursday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824768",
+    "date": "2026-05-08",
+    "day_of_week": "Friday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824766",
+    "date": "2026-05-09",
+    "day_of_week": "Saturday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824765",
+    "date": "2026-05-10",
+    "day_of_week": "Sunday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824764",
+    "date": "2026-05-12",
+    "day_of_week": "Tuesday",
+    "opponent": "Philadelphia Phillies"
+  },
+  {
+    "game_id": "mlb-824763",
+    "date": "2026-05-13",
+    "day_of_week": "Wednesday",
+    "opponent": "Philadelphia Phillies"
+  },
+  {
+    "game_id": "mlb-824762",
+    "date": "2026-05-14",
+    "day_of_week": "Thursday",
+    "opponent": "Philadelphia Phillies"
+  },
+  {
+    "game_id": "mlb-824761",
+    "date": "2026-05-22",
+    "day_of_week": "Friday",
+    "opponent": "Minnesota Twins"
+  },
+  {
+    "game_id": "mlb-824760",
+    "date": "2026-05-23",
+    "day_of_week": "Saturday",
+    "opponent": "Minnesota Twins"
+  },
+  {
+    "game_id": "mlb-824759",
+    "date": "2026-05-24",
+    "day_of_week": "Sunday",
+    "opponent": "Minnesota Twins"
+  },
+  {
+    "game_id": "mlb-824758",
+    "date": "2026-05-26",
+    "day_of_week": "Tuesday",
+    "opponent": "Atlanta Braves"
+  },
+  {
+    "game_id": "mlb-824756",
+    "date": "2026-05-27",
+    "day_of_week": "Wednesday",
+    "opponent": "Atlanta Braves"
+  },
+  {
+    "game_id": "mlb-824757",
+    "date": "2026-05-28",
+    "day_of_week": "Thursday",
+    "opponent": "Atlanta Braves"
+  },
+  {
+    "game_id": "mlb-824754",
+    "date": "2026-06-02",
+    "day_of_week": "Tuesday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824755",
+    "date": "2026-06-03",
+    "day_of_week": "Wednesday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824753",
+    "date": "2026-06-04",
+    "day_of_week": "Thursday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824752",
+    "date": "2026-06-12",
+    "day_of_week": "Friday",
+    "opponent": "Texas Rangers"
+  },
+  {
+    "game_id": "mlb-824749",
+    "date": "2026-06-13",
+    "day_of_week": "Saturday",
+    "opponent": "Texas Rangers"
+  },
+  {
+    "game_id": "mlb-824751",
+    "date": "2026-06-14",
+    "day_of_week": "Sunday",
+    "opponent": "Texas Rangers"
+  },
+  {
+    "game_id": "mlb-824750",
+    "date": "2026-06-16",
+    "day_of_week": "Tuesday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824746",
+    "date": "2026-06-17",
+    "day_of_week": "Wednesday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824748",
+    "date": "2026-06-18",
+    "day_of_week": "Thursday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824747",
+    "date": "2026-06-25",
+    "day_of_week": "Thursday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824743",
+    "date": "2026-06-26",
+    "day_of_week": "Friday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824745",
+    "date": "2026-06-27",
+    "day_of_week": "Saturday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824744",
+    "date": "2026-06-28",
+    "day_of_week": "Sunday",
+    "opponent": "New York Yankees"
+  },
+  {
+    "game_id": "mlb-824741",
+    "date": "2026-06-29",
+    "day_of_week": "Monday",
+    "opponent": "Washington Nationals"
+  },
+  {
+    "game_id": "mlb-824742",
+    "date": "2026-06-30",
+    "day_of_week": "Tuesday",
+    "opponent": "Washington Nationals"
+  },
+  {
+    "game_id": "mlb-824740",
+    "date": "2026-07-01",
+    "day_of_week": "Wednesday",
+    "opponent": "Washington Nationals"
+  },
+  {
+    "game_id": "mlb-824737",
+    "date": "2026-07-17",
+    "day_of_week": "Friday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824738",
+    "date": "2026-07-18",
+    "day_of_week": "Saturday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824739",
+    "date": "2026-07-19",
+    "day_of_week": "Sunday",
+    "opponent": "Tampa Bay Rays"
+  },
+  {
+    "game_id": "mlb-824736",
+    "date": "2026-07-20",
+    "day_of_week": "Monday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824735",
+    "date": "2026-07-21",
+    "day_of_week": "Tuesday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824732",
+    "date": "2026-07-22",
+    "day_of_week": "Wednesday",
+    "opponent": "Baltimore Orioles"
+  },
+  {
+    "game_id": "mlb-824733",
+    "date": "2026-07-24",
+    "day_of_week": "Friday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824734",
+    "date": "2026-07-25",
+    "day_of_week": "Saturday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824730",
+    "date": "2026-07-26",
+    "day_of_week": "Sunday",
+    "opponent": "Toronto Blue Jays"
+  },
+  {
+    "game_id": "mlb-824731",
+    "date": "2026-08-04",
+    "day_of_week": "Tuesday",
+    "opponent": "Chicago White Sox"
+  },
+  {
+    "game_id": "mlb-824728",
+    "date": "2026-08-05",
+    "day_of_week": "Wednesday",
+    "opponent": "Chicago White Sox"
+  },
+  {
+    "game_id": "mlb-824729",
+    "date": "2026-08-06",
+    "day_of_week": "Thursday",
+    "opponent": "Chicago White Sox"
+  },
+  {
+    "game_id": "mlb-824727",
+    "date": "2026-08-07",
+    "day_of_week": "Friday",
+    "opponent": "Athletics"
+  },
+  {
+    "game_id": "mlb-824726",
+    "date": "2026-08-08",
+    "day_of_week": "Saturday",
+    "opponent": "Athletics"
+  },
+  {
+    "game_id": "mlb-824724",
+    "date": "2026-08-09",
+    "day_of_week": "Sunday",
+    "opponent": "Athletics"
+  },
+  {
+    "game_id": "mlb-824725",
+    "date": "2026-08-17",
+    "day_of_week": "Monday",
+    "opponent": "Arizona Diamondbacks"
+  },
+  {
+    "game_id": "mlb-824723",
+    "date": "2026-08-18",
+    "day_of_week": "Tuesday",
+    "opponent": "Arizona Diamondbacks"
+  },
+  {
+    "game_id": "mlb-824722",
+    "date": "2026-08-19",
+    "day_of_week": "Wednesday",
+    "opponent": "Arizona Diamondbacks"
+  },
+  {
+    "game_id": "mlb-824721",
+    "date": "2026-08-21",
+    "day_of_week": "Friday",
+    "opponent": "San Francisco Giants"
+  },
+  {
+    "game_id": "mlb-824718",
+    "date": "2026-08-22",
+    "day_of_week": "Saturday",
+    "opponent": "San Francisco Giants"
+  },
+  {
+    "game_id": "mlb-824720",
+    "date": "2026-08-23",
+    "day_of_week": "Sunday",
+    "opponent": "San Francisco Giants"
+  },
+  {
+    "game_id": "mlb-824719",
+    "date": "2026-08-31",
+    "day_of_week": "Monday",
+    "opponent": "Seattle Mariners"
+  },
+  {
+    "game_id": "mlb-824716",
+    "date": "2026-09-01",
+    "day_of_week": "Tuesday",
+    "opponent": "Seattle Mariners"
+  },
+  {
+    "game_id": "mlb-824717",
+    "date": "2026-09-02",
+    "day_of_week": "Wednesday",
+    "opponent": "Seattle Mariners"
+  },
+  {
+    "game_id": "mlb-824715",
+    "date": "2026-09-07",
+    "day_of_week": "Monday",
+    "opponent": "Los Angeles Angels"
+  },
+  {
+    "game_id": "mlb-824714",
+    "date": "2026-09-08",
+    "day_of_week": "Tuesday",
+    "opponent": "Los Angeles Angels"
+  },
+  {
+    "game_id": "mlb-824713",
+    "date": "2026-09-09",
+    "day_of_week": "Wednesday",
+    "opponent": "Los Angeles Angels"
+  },
+  {
+    "game_id": "mlb-824711",
+    "date": "2026-09-11",
+    "day_of_week": "Friday",
+    "opponent": "Kansas City Royals"
+  },
+  {
+    "game_id": "mlb-824712",
+    "date": "2026-09-12",
+    "day_of_week": "Saturday",
+    "opponent": "Kansas City Royals"
+  },
+  {
+    "game_id": "mlb-824708",
+    "date": "2026-09-13",
+    "day_of_week": "Sunday",
+    "opponent": "Kansas City Royals"
+  },
+  {
+    "game_id": "mlb-824709",
+    "date": "2026-09-22",
+    "day_of_week": "Tuesday",
+    "opponent": "Cleveland Guardians"
+  },
+  {
+    "game_id": "mlb-824710",
+    "date": "2026-09-23",
+    "day_of_week": "Wednesday",
+    "opponent": "Cleveland Guardians"
+  },
+  {
+    "game_id": "mlb-824707",
+    "date": "2026-09-24",
+    "day_of_week": "Thursday",
+    "opponent": "Cleveland Guardians"
+  },
+  {
+    "game_id": "mlb-824706",
+    "date": "2026-09-25",
+    "day_of_week": "Friday",
+    "opponent": "Chicago Cubs"
+  },
+  {
+    "game_id": "mlb-824705",
+    "date": "2026-09-26",
+    "day_of_week": "Saturday",
+    "opponent": "Chicago Cubs"
+  },
+  {
+    "game_id": "mlb-824703",
+    "date": "2026-09-27",
+    "day_of_week": "Sunday",
+    "opponent": "Chicago Cubs"
+  }
+]

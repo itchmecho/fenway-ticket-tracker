@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#bd3039">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Fenway Ticket Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0d1f2d;
+      --navy-light: #152a3a;
+      --navy-mid: #1a3347;
+      --red: #bd3039;
+      --red-glow: #e8434c;
+      --white: #f0f0f0;
+      --white-dim: #8a9baa;
+      --green: #2ecc71;
+      --green-dim: #1a7a42;
+      --amber: #f0a500;
+      --card-radius: 12px;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    html { background: var(--navy); }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color: var(--white);
+      min-height: 100dvh;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* === BACKGROUND TEXTURE === */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(189,48,57,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 100%, rgba(189,48,57,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* === OFFLINE BANNER === */
+    .offline-banner {
+      display: none;
+      background: var(--amber);
+      color: var(--navy);
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .offline-banner.visible { display: block; }
+
+    /* === HEADER === */
+    header {
+      position: relative;
+      z-index: 10;
+      padding: calc(var(--safe-top) + 20px) 20px 16px;
+      text-align: center;
+    }
+
+    .header-eyebrow {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 4px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .header-divider {
+      width: 40px;
+      height: 3px;
+      background: var(--red);
+      margin: 12px auto;
+      border-radius: 2px;
+    }
+
+    .last-updated {
+      font-size: 12px;
+      color: var(--white-dim);
+      letter-spacing: 0.02em;
+    }
+
+    /* === FILTERS === */
+    .filters {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+      padding: 12px 20px 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+
+    .filter-pill {
+      flex-shrink: 0;
+      padding: 7px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--navy-mid);
+      background: transparent;
+      color: var(--white-dim);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .filter-pill:hover { border-color: var(--white-dim); }
+    .filter-pill.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+
+    .sort-select {
+      flex-shrink: 0;
+      padding: 7px 12px;
+      border-radius: 20px;
+      border: 1.5px solid var(--navy-mid);
+      background: var(--navy);
+      color: var(--white-dim);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      margin-left: auto;
+    }
+    .sort-select:focus { outline: none; border-color: var(--red); }
+
+    /* === GAME LIST === */
+    .game-list {
+      position: relative;
+      z-index: 10;
+      padding: 8px 16px calc(var(--safe-bottom) + 80px);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* === GAME CARD === */
+    .game-card {
+      background: var(--navy-light);
+      border-radius: var(--card-radius);
+      border: 1px solid rgba(255,255,255,0.04);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      -webkit-tap-highlight-color: transparent;
+      animation: cardIn 0.4s ease both;
+    }
+    .game-card:active { transform: scale(0.985); }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-main {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      position: relative;
+    }
+
+    /* Left date block */
+    .date-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+      border-radius: 8px;
+      padding: 8px 4px;
+      min-height: 52px;
+    }
+    .date-block .month {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      line-height: 1;
+    }
+    .date-block .day {
+      font-family: var(--font-display);
+      font-size: 26px;
+      line-height: 1;
+      color: var(--white);
+      margin-top: 1px;
+    }
+    .date-block .dow {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--white-dim);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    /* Middle info */
+    .game-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+    .opponent-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .game-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .weather-tag {
+      font-size: 12px;
+      color: var(--white-dim);
+    }
+    .pairs-tag {
+      font-size: 11px;
+      color: var(--white-dim);
+      background: rgba(255,255,255,0.06);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    /* Badges row */
+    .badges {
+      display: flex;
+      gap: 5px;
+      margin-top: 2px;
+    }
+    .badge {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      line-height: 1.4;
+    }
+    .badge-deal {
+      background: var(--red);
+      color: #fff;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .badge-falling {
+      background: var(--green-dim);
+      color: var(--green);
+    }
+    .badge-weekend {
+      background: rgba(240,165,0,0.15);
+      color: var(--amber);
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.75; }
+    }
+
+    /* Right price block */
+    .price-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+      padding-left: 8px;
+    }
+    .best-price {
+      font-family: var(--font-display);
+      font-size: 32px;
+      line-height: 1;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .game-card.has-deal .best-price {
+      color: var(--red-glow);
+      text-shadow: 0 0 20px rgba(189,48,57,0.3);
+    }
+    .price-source {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+    .no-price {
+      font-size: 13px;
+      color: var(--white-dim);
+      font-style: italic;
+    }
+
+    /* Expand chevron hint */
+    .card-main::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 24px;
+      height: 3px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.1);
+      transition: background 0.2s;
+    }
+    .game-card.expanded .card-main::after {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* === EXPANDED DETAIL === */
+    .card-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      background: var(--navy);
+    }
+    .game-card.expanded .card-detail {
+      max-height: 400px;
+    }
+
+    .detail-inner {
+      padding: 0 16px 16px;
+    }
+
+    .detail-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+      margin-bottom: 14px;
+    }
+
+    /* Price comparison */
+    .price-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .price-source-card {
+      background: var(--navy-light);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .price-source-card.unavailable {
+      opacity: 0.4;
+    }
+    .source-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+    .source-price {
+      font-family: var(--font-display);
+      font-size: 28px;
+      line-height: 1;
+      color: var(--white);
+    }
+    .source-detail {
+      font-size: 11px;
+      color: var(--white-dim);
+    }
+    .source-type {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-top: 4px;
+    }
+    .type-primary {
+      background: rgba(46,204,113,0.12);
+      color: var(--green);
+    }
+    .type-resale {
+      background: rgba(240,165,0,0.12);
+      color: var(--amber);
+    }
+
+    /* Velocity row */
+    .velocity-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--navy-light);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+    }
+    .velocity-arrow {
+      font-size: 18px;
+      line-height: 1;
+    }
+    .velocity-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .velocity-change {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .velocity-change.falling { color: var(--green); }
+    .velocity-change.rising { color: var(--red-glow); }
+    .velocity-change.stable { color: var(--white-dim); }
+    .velocity-trend {
+      font-size: 11px;
+      color: var(--white-dim);
+      letter-spacing: 0.02em;
+    }
+
+    /* Buy links */
+    .buy-links {
+      display: flex;
+      gap: 8px;
+    }
+    .buy-link {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .buy-link:active { opacity: 0.7; }
+    .buy-link-tm {
+      background: var(--red);
+      color: #fff;
+    }
+    .buy-link-sg {
+      background: var(--navy-mid);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .buy-link.disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    /* === EMPTY STATE === */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--white-dim);
+    }
+    .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
+    .empty-state h2 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .empty-state p { font-size: 14px; line-height: 1.5; }
+
+    /* === FOOTER === */
+    footer {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 20px;
+      padding-bottom: calc(var(--safe-bottom) + 20px);
+      font-size: 11px;
+      color: var(--white-dim);
+      letter-spacing: 0.02em;
+    }
+    footer a { color: var(--white-dim); }
+
+    /* === LOADING === */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+    .loading-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--red);
+      border-radius: 50%;
+      margin: 0 4px;
+      animation: loadBounce 1s ease-in-out infinite;
+    }
+    .loading-dot:nth-child(2) { animation-delay: 0.15s; }
+    .loading-dot:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes loadBounce {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* === RESPONSIVE === */
+    @media (min-width: 480px) {
+      .game-list { padding: 8px 24px calc(var(--safe-bottom) + 80px); }
+      .filters { padding: 12px 24px 8px; }
+      h1 { font-size: 48px; }
+    }
+    @media (min-width: 768px) {
+      .game-list { max-width: 600px; margin: 0 auto; }
+      .filters { max-width: 600px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="offline-banner" id="offlineBanner">
+    Offline — showing cached data
+  </div>
+
+  <header>
+    <div class="header-eyebrow">Boston Red Sox</div>
+    <h1>FENWAY TICKET TRACKER</h1>
+    <div class="header-divider"></div>
+    <div class="last-updated" id="lastUpdated"></div>
+  </header>
+
+  <div class="filters" id="filters">
+    <button class="filter-pill" data-filter="weekends">Weekends</button>
+    <button class="filter-pill" data-filter="deals">Deals</button>
+    <select class="sort-select" id="sortSelect">
+      <option value="date">By Date</option>
+      <option value="price">By Price</option>
+      <option value="velocity">By Velocity</option>
+    </select>
+  </div>
+
+  <main class="game-list" id="gameList">
+    <div class="loading" id="loading">
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script>
+    const ET = { timeZone: 'America/New_York' };
+    const DATA_URL = '../data/latest.json';
+
+    let allGames = [];
+    let activeFilters = new Set();
+    let currentSort = 'date';
+
+    // ── Boot ──
+    async function init() {
+      registerSW();
+      detectOffline();
+      bindFilters();
+      await loadData();
+    }
+
+    function registerSW() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      }
+    }
+
+    function detectOffline() {
+      const banner = document.getElementById('offlineBanner');
+      const update = () => banner.classList.toggle('visible', !navigator.onLine);
+      window.addEventListener('online', update);
+      window.addEventListener('offline', update);
+      update();
+    }
+
+    // ── Data ──
+    async function loadData() {
+      try {
+        const res = await fetch(DATA_URL);
+        if (!res.ok) throw new Error(res.status);
+        const data = await res.json();
+        allGames = data.games || [];
+        renderUpdated(data.generated_at);
+        renderGames();
+        renderFooter();
+      } catch (err) {
+        document.getElementById('loading').innerHTML =
+          '<div class="empty-state"><div class="icon">&#9918;</div><h2>NO DATA YET</h2><p>Waiting for the first data fetch to run.</p></div>';
+      }
+    }
+
+    function renderUpdated(iso) {
+      if (!iso) return;
+      const d = new Date(iso);
+      const str = d.toLocaleString('en-US', {
+        ...ET,
+        month: 'short', day: 'numeric',
+        hour: 'numeric', minute: '2-digit',
+        hour12: true,
+      });
+      document.getElementById('lastUpdated').textContent = `Updated ${str} ET`;
+    }
+
+    // ── Filters & Sort ──
+    function bindFilters() {
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const f = btn.dataset.filter;
+          if (activeFilters.has(f)) { activeFilters.delete(f); btn.classList.remove('active'); }
+          else { activeFilters.add(f); btn.classList.add('active'); }
+          renderGames();
+        });
+      });
+      document.getElementById('sortSelect').addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        renderGames();
+      });
+    }
+
+    function filterAndSort(games) {
+      let filtered = [...games];
+
+      if (activeFilters.has('weekends')) {
+        filtered = filtered.filter(g => g.is_preferred_day);
+      }
+      if (activeFilters.has('deals')) {
+        filtered = filtered.filter(g => g.price_alert);
+      }
+
+      filtered.sort((a, b) => {
+        if (currentSort === 'price') {
+          const pa = a.best_available?.price ?? Infinity;
+          const pb = b.best_available?.price ?? Infinity;
+          return pa - pb;
+        }
+        if (currentSort === 'velocity') {
+          const va = a.velocity?.change_pct_7d ?? 0;
+          const vb = b.velocity?.change_pct_7d ?? 0;
+          return va - vb; // most falling first
+        }
+        return a.date.localeCompare(b.date);
+      });
+
+      return filtered;
+    }
+
+    // ── Render ──
+    function renderGames() {
+      const container = document.getElementById('gameList');
+      const games = filterAndSort(allGames);
+
+      if (games.length === 0 && allGames.length > 0) {
+        container.innerHTML = '<div class="empty-state"><div class="icon">&#128270;</div><h2>NO MATCHES</h2><p>Try adjusting your filters.</p></div>';
+        return;
+      }
+      if (games.length === 0) {
+        container.innerHTML = '<div class="empty-state"><div class="icon">&#9918;</div><h2>NO UPCOMING GAMES</h2><p>Check back when games are scheduled.</p></div>';
+        return;
+      }
+
+      container.innerHTML = games.map((g, i) => renderCard(g, i)).join('');
+
+      // Bind expand/collapse
+      container.querySelectorAll('.game-card').forEach(card => {
+        card.querySelector('.card-main').addEventListener('click', () => {
+          card.classList.toggle('expanded');
+        });
+      });
+    }
+
+    function renderCard(game, index) {
+      const d = new Date(game.date + 'T12:00:00Z');
+      const month = d.toLocaleString('en-US', { ...ET, month: 'short' }).toUpperCase();
+      const day = d.toLocaleString('en-US', { ...ET, day: 'numeric' });
+      const dow = game.day_of_week.substring(0, 3).toUpperCase();
+
+      const hasDeal = game.price_alert;
+      const dealClass = hasDeal ? 'has-deal' : '';
+
+      // Badges
+      let badges = '';
+      if (hasDeal) badges += '<span class="badge badge-deal">Deal</span>';
+      if (game.velocity?.direction === 'falling') badges += '<span class="badge badge-falling">Falling</span>';
+      if (game.is_preferred_day) badges += '<span class="badge badge-weekend">Weekend</span>';
+
+      // Weather
+      let weather = '';
+      if (game.weather?.forecast_available) {
+        weather = `<span class="weather-tag">${game.weather.emoji} ${game.weather.high_temp_f}°</span>`;
+      }
+
+      // Pairs
+      let pairs = '';
+      if (game.tickets?.seatgeek?.pairs_available) {
+        pairs = `<span class="pairs-tag">${game.tickets.seatgeek.pairs_available} pairs</span>`;
+      }
+
+      // Price
+      let priceHtml;
+      if (game.best_available) {
+        const src = game.best_available.is_primary ? 'Primary' : 'Resale';
+        priceHtml = `
+          <span class="best-price">$${game.best_available.price}</span>
+          <span class="price-source">${src}</span>`;
+      } else {
+        priceHtml = '<span class="no-price">No pricing</span>';
+      }
+
+      // Detail
+      const detail = renderDetail(game);
+
+      return `
+        <div class="game-card ${dealClass}" style="animation-delay:${index * 0.04}s">
+          <div class="card-main">
+            <div class="date-block">
+              <span class="month">${month}</span>
+              <span class="day">${day}</span>
+              <span class="dow">${dow}</span>
+            </div>
+            <div class="game-info">
+              <div class="opponent-name">${game.opponent}</div>
+              <div class="game-meta">${weather}${pairs}</div>
+              ${badges ? `<div class="badges">${badges}</div>` : ''}
+            </div>
+            <div class="price-block">${priceHtml}</div>
+          </div>
+          <div class="card-detail">${detail}</div>
+        </div>`;
+    }
+
+    function renderDetail(game) {
+      const tm = game.tickets?.ticketmaster;
+      const sg = game.tickets?.seatgeek;
+
+      // Ticketmaster card
+      const scraped = game.tickets?.ticketmaster_scraped;
+      const tmHasPrice = tm?.min_price != null;
+      let tmCard;
+      if (tmHasPrice) {
+        const resaleOnly = scraped?.inventory_types?.length === 1 && scraped.inventory_types[0] === 'resale';
+        const typeLabel = resaleOnly ? 'Resale' : 'Face Value';
+        const typeClass = resaleOnly ? 'type-resale' : 'type-primary';
+        const listingsInfo = scraped?.total_listings ? ` · ${scraped.total_listings.toLocaleString()} listings` : '';
+        tmCard = `
+          <div class="price-source-card">
+            <span class="source-label">Ticketmaster</span>
+            <span class="source-price">$${tm.min_price}</span>
+            <span class="source-detail">up to $${tm.max_price}${listingsInfo}</span>
+            <span class="source-type ${typeClass}">${typeLabel}</span>
+          </div>`;
+      } else if (tm?.listing_url) {
+        tmCard = `
+          <div class="price-source-card">
+            <span class="source-label">Ticketmaster</span>
+            <span class="source-price">—</span>
+            <span class="source-detail">Pricing not available yet</span>
+          </div>`;
+      } else {
+        tmCard = `
+          <div class="price-source-card unavailable">
+            <span class="source-label">Ticketmaster</span>
+            <span class="source-price">—</span>
+            <span class="source-detail">Not available</span>
+          </div>`;
+      }
+
+      // SeatGeek card
+      let sgCard;
+      if (sg) {
+        sgCard = `
+          <div class="price-source-card">
+            <span class="source-label">SeatGeek</span>
+            <span class="source-price">$${sg.low_price}</span>
+            <span class="source-detail">median $${sg.median_price} · ${sg.best_section}</span>
+            <span class="source-type type-resale">Resale</span>
+          </div>`;
+      } else {
+        sgCard = `
+          <div class="price-source-card unavailable">
+            <span class="source-label">SeatGeek</span>
+            <span class="source-price">—</span>
+            <span class="source-detail">Not available</span>
+          </div>`;
+      }
+
+      // Velocity
+      let velocityHtml = '';
+      if (game.velocity?.trend && game.velocity.trend !== 'insufficient_data') {
+        const dir = game.velocity.direction;
+        const arrow = dir === 'falling' ? '&#9660;' : dir === 'rising' ? '&#9650;' : '&#9644;';
+        const changeStr = game.velocity.change_7d > 0
+          ? `+$${game.velocity.change_7d}`
+          : `-$${Math.abs(game.velocity.change_7d)}`;
+        const pctStr = game.velocity.change_pct_7d > 0
+          ? `+${game.velocity.change_pct_7d}%`
+          : `${game.velocity.change_pct_7d}%`;
+        const trendLabels = {
+          act_now: 'Act now — under threshold & falling',
+          good_time_to_buy: 'Good time to buy — prices dropping',
+          rising: 'Prices rising',
+          stable: 'Prices stable',
+        };
+        velocityHtml = `
+          <div class="velocity-row">
+            <span class="velocity-arrow">${arrow}</span>
+            <div class="velocity-info">
+              <span class="velocity-change ${dir}">${changeStr} (${pctStr}) 7d</span>
+              <span class="velocity-trend">${trendLabels[game.velocity.trend] || game.velocity.trend}</span>
+            </div>
+          </div>`;
+      }
+
+      // Buy links
+      const tmLink = tm?.listing_url
+        ? `<a class="buy-link buy-link-tm" href="${tm.listing_url}" target="_blank" rel="noopener">Ticketmaster</a>`
+        : `<span class="buy-link buy-link-tm disabled">Ticketmaster</span>`;
+      const sgLink = sg?.listing_url
+        ? `<a class="buy-link buy-link-sg" href="${sg.listing_url}" target="_blank" rel="noopener">SeatGeek</a>`
+        : `<span class="buy-link buy-link-sg disabled">SeatGeek</span>`;
+
+      return `
+        <div class="detail-inner">
+          <div class="detail-divider"></div>
+          <div class="price-compare">${tmCard}${sgCard}</div>
+          ${velocityHtml}
+          <div class="buy-links">${tmLink}${sgLink}</div>
+        </div>`;
+    }
+
+    function renderFooter() {
+      const hasSeatGeek = allGames.some(g => g.tickets?.seatgeek);
+      const footer = document.getElementById('footer');
+      footer.innerHTML = hasSeatGeek
+        ? 'Resale data powered by <a href="https://seatgeek.com" target="_blank" rel="noopener">SeatGeek</a>'
+        : '';
+    }
+
+    // ── Go ──
+    init();
+  </script>
+</body>
+</html>

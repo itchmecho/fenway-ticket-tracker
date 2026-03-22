@@ -1,0 +1,422 @@
+{
+  "generated_at": "2026-03-22T02:08:52.180Z",
+  "games": [
+    {
+      "game_id": "mlb-824786",
+      "date": "2026-04-03",
+      "day_of_week": "Friday",
+      "opponent": "San Diego Padres",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 141,
+          "max_price": 2743,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8ko",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 141,
+          "max_price": 2743,
+          "total_listings": 3028,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 141,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": false,
+      "weather": {
+        "high_temp_f": 55,
+        "precipitation_in": 0,
+        "condition": "Overcast",
+        "emoji": "☁️",
+        "forecast_available": true
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824782",
+      "date": "2026-04-04",
+      "day_of_week": "Saturday",
+      "opponent": "San Diego Padres",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 58,
+          "max_price": 1834,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k3",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 58,
+          "max_price": 1834,
+          "total_listings": 3114,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 58,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "high_temp_f": 72,
+        "precipitation_in": 0,
+        "condition": "Overcast",
+        "emoji": "☁️",
+        "forecast_available": true
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824781",
+      "date": "2026-04-05",
+      "day_of_week": "Sunday",
+      "opponent": "San Diego Padres",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 38,
+          "max_price": 2635,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kK",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 38,
+          "max_price": 2635,
+          "total_listings": 3243,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 38,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824783",
+      "date": "2026-04-06",
+      "day_of_week": "Monday",
+      "opponent": "Milwaukee Brewers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 22,
+          "max_price": 1853,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kf",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 22,
+          "max_price": 1853,
+          "total_listings": 3209,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 22,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824780",
+      "date": "2026-04-07",
+      "day_of_week": "Tuesday",
+      "opponent": "Milwaukee Brewers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 17,
+          "max_price": 1235,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k4",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 17,
+          "max_price": 1235,
+          "total_listings": 3205,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 17,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824779",
+      "date": "2026-04-08",
+      "day_of_week": "Wednesday",
+      "opponent": "Milwaukee Brewers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": null,
+        "seatgeek": null
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824778",
+      "date": "2026-04-17",
+      "day_of_week": "Friday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 26,
+          "max_price": 1385,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k9",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 26,
+          "max_price": 1385,
+          "total_listings": 3915,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 26,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824775",
+      "date": "2026-04-18",
+      "day_of_week": "Saturday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 43,
+          "max_price": 2063,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kb",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 43,
+          "max_price": 2063,
+          "total_listings": 4079,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 43,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824777",
+      "date": "2026-04-19",
+      "day_of_week": "Sunday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k_",
+          "source": "primary"
+        },
+        "seatgeek": null
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824776",
+      "date": "2026-04-20",
+      "day_of_week": "Monday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 69,
+          "max_price": 2294,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FZ",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 69,
+          "max_price": 2294,
+          "total_listings": 3636,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 69,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824773",
+      "date": "2026-04-21",
+      "day_of_week": "Tuesday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 64,
+          "max_price": 5548,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fv",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 64,
+          "max_price": 5548,
+          "total_listings": 4048,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "best_available": {
+        "price": 64,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    }
+  ]
+}
