@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T02:08:52.180Z",
+  "generated_at": "2026-03-22T02:29:51.426Z",
   "games": [
     {
       "game_id": "mlb-824786",
@@ -9,27 +9,14 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 141,
-          "max_price": 2743,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8ko",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 141,
-          "max_price": 2743,
-          "total_listings": 3028,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 141,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
+      "best_available": null,
       "price_alert": false,
       "weather": {
         "high_temp_f": 55,
@@ -52,29 +39,11 @@
       "opponent": "San Diego Padres",
       "is_preferred_day": true,
       "tickets": {
-        "ticketmaster": {
-          "min_price": 58,
-          "max_price": 1834,
-          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k3",
-          "source": "primary"
-        },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 58,
-          "max_price": 1834,
-          "total_listings": 3114,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "ticketmaster": null,
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 58,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "high_temp_f": 72,
         "precipitation_in": 0,
@@ -97,30 +66,21 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": 38,
-          "max_price": 2635,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kK",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 38,
-          "max_price": 2635,
-          "total_listings": 3243,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 38,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
-        "forecast_available": false
+        "high_temp_f": 75,
+        "precipitation_in": 0.04,
+        "condition": "Light drizzle",
+        "emoji": "🌦️",
+        "forecast_available": true
       },
       "velocity": {
         "direction": null,
@@ -137,28 +97,15 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 22,
-          "max_price": 1853,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kf",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 22,
-          "max_price": 1853,
-          "total_listings": 3209,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 22,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
@@ -177,28 +124,15 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 17,
-          "max_price": 1235,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k4",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 17,
-          "max_price": 1235,
-          "total_listings": 3205,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 17,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
@@ -216,7 +150,12 @@
       "opponent": "Milwaukee Brewers",
       "is_preferred_day": false,
       "tickets": {
-        "ticketmaster": null,
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kp",
+          "source": "primary"
+        },
         "seatgeek": null
       },
       "best_available": null,
@@ -239,28 +178,15 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 26,
-          "max_price": 1385,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k9",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 26,
-          "max_price": 1385,
-          "total_listings": 3915,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 26,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
@@ -279,28 +205,15 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": 43,
-          "max_price": 2063,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kb",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 43,
-          "max_price": 2063,
-          "total_listings": 4079,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 43,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
@@ -346,28 +259,15 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 69,
-          "max_price": 2294,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FZ",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 69,
-          "max_price": 2294,
-          "total_listings": 3636,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 69,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
@@ -386,28 +286,15 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 64,
-          "max_price": 5548,
+          "min_price": null,
+          "max_price": null,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fv",
           "source": "primary"
         },
-        "seatgeek": null,
-        "ticketmaster_scraped": {
-          "min_price": 64,
-          "max_price": 5548,
-          "total_listings": 4048,
-          "inventory_types": [
-            "resale"
-          ],
-          "source": "ticketmaster_scraped"
-        }
+        "seatgeek": null
       },
-      "best_available": {
-        "price": 64,
-        "source": "ticketmaster",
-        "is_primary": true
-      },
-      "price_alert": true,
+      "best_available": null,
+      "price_alert": false,
       "weather": {
         "forecast_available": false
       },
