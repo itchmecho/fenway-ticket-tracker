@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'fenway-v3';
+const CACHE_VERSION = 'fenway-v4';
 const STATIC_ASSETS = [
   './',
   './index.html',

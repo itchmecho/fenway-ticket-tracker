@@ -1,6 +1,16 @@
 {
   "sections": [],
   "section_map": {},
+  "section_groups": {
+    "Field Box": ["Field Box", "FB"],
+    "Aura Club": ["Aura Club", "EMC Club", "Club"],
+    "Aura": ["Aura", "Pavilion"],
+    "Grandstand": ["Grandstand", "GS"],
+    "Bleachers": ["Bleacher", "BL"],
+    "Loge Box": ["Loge Box", "Loge"],
+    "Right Field": ["Right Field", "RF Box", "RF Roof"],
+    "Standing Room": ["Standing Room", "SRO"]
+  },
   "min_quantity": 2,
   "price_alert_threshold": 75,
   "preferred_days": ["Saturday", "Sunday"],

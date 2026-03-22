@@ -25,7 +25,7 @@
 
       /* Text */
       --color-text-primary:  #f8f9fa;
-      --color-text-secondary: #adb5bd;
+      --color-text-secondary: #ced4da;      /* bumped for WCAG AA 4.5:1 on card bg */
       --color-text-muted:    #949fb0;
 
       /* Borders */
@@ -138,7 +138,8 @@
     /* Theme transition on key elements */
     html, body, header, .game-card, .card-detail, .price-source-card,
     .velocity-row, .filter-pill, .filters, .sort-select, .date-block,
-    .skeleton-card, .theme-toggle, .buy-link, .offline-banner {
+    .skeleton-card, .theme-toggle, .buy-link, .offline-banner,
+    .section-pill, .section-chip {
       transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -310,6 +311,49 @@
       background-size: 12px;
     }
     .sort-select:focus { outline: none; border-color: var(--color-accent); }
+
+    /* Section filter row */
+    .section-filters {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      gap: 6px;
+      margin: 0 20px 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .section-filters::-webkit-scrollbar { display: none; }
+
+    .section-pill {
+      flex-shrink: 0;
+      padding: 6px 12px;
+      min-height: 32px;
+      border-radius: 9999px;
+      border: 1px solid var(--color-border);
+      background: transparent;
+      color: var(--color-text-secondary);
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .section-pill:hover:not(.active) {
+      background: var(--color-bg-elevated);
+      border-color: var(--color-text-muted);
+    }
+    .section-pill.active {
+      background: var(--color-green-monster);
+      border-color: var(--color-green-monster);
+      color: #fff;
+    }
+    .section-pill .section-price {
+      font-weight: 700;
+      margin-left: 4px;
+    }
 
     /* === GAME LIST === */
     .game-list {
@@ -594,6 +638,50 @@
       border: 1px solid rgba(234, 179, 8, 0.25);
     }
 
+    /* Section pricing grid */
+    .section-pricing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .section-pricing-label {
+      grid-column: 1 / -1;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 2px;
+    }
+    .section-chip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-light);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+    .section-chip-name {
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+    .section-chip-price {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--color-text-primary);
+    }
+    .section-chip.highlight {
+      border-color: rgba(0, 104, 71, 0.35);
+      background: rgba(0, 104, 71, 0.08);
+    }
+    .section-chip.highlight .section-chip-name {
+      color: var(--color-green-monster);
+      font-weight: 600;
+    }
+
     /* Velocity row - stat bar treatment */
     .velocity-row {
       background: var(--color-bg-card);
@@ -750,14 +838,43 @@
     }
 
     /* === RESPONSIVE === */
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Focus styles for keyboard nav */
+    .card-main:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: -2px;
+      border-radius: 8px;
+    }
+    .theme-toggle:focus-visible,
+    .filter-pill:focus-visible,
+    .section-pill:focus-visible,
+    .sort-select:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
     @media (min-width: 480px) {
       .game-list { padding: 8px 24px calc(var(--safe-bottom) + 80px); }
       .filters { margin: 12px 24px 8px; }
+      .section-filters { margin: 0 24px 8px; }
       h1 { font-size: 48px; }
     }
     @media (min-width: 768px) {
       .game-list { max-width: 640px; margin: 0 auto; }
       .filters { max-width: 640px; margin: 12px auto 8px; }
+      .section-filters { max-width: 640px; margin: 0 auto 8px; }
     }
   </style>
 </head>
@@ -781,11 +898,21 @@
   <div class="filters" id="filters">
     <button class="filter-pill" data-filter="weekends">Weekends</button>
     <button class="filter-pill" data-filter="deals">Deals</button>
+    <label for="sortSelect" class="sr-only">Sort games</label>
     <select class="sort-select" id="sortSelect">
       <option value="date">By Date</option>
       <option value="price">By Price</option>
       <option value="velocity">By Velocity</option>
     </select>
+  </div>
+
+  <div class="section-filters" id="sectionFilters">
+    <button class="section-pill" data-section="Field Box">Field Box</button>
+    <button class="section-pill" data-section="Aura Club">Aura Club</button>
+    <button class="section-pill" data-section="Aura">Aura</button>
+    <button class="section-pill" data-section="Grandstand">Grandstand</button>
+    <button class="section-pill" data-section="Bleachers">Bleachers</button>
+    <button class="section-pill" data-section="Loge Box">Loge Box</button>
   </div>
 
   <main class="game-list" id="gameList">
@@ -848,8 +975,22 @@
 
     const RIVALRY_TEAMS = ['New York Yankees', 'Los Angeles Dodgers'];
 
+    // Section group patterns — match section names from TM facets data
+    const SECTION_GROUPS = {
+      'Field Box': ['field box', 'fb'],
+      'Aura Club': ['aura club', 'emc club', 'club'],
+      'Aura': ['aura', 'pavilion'],
+      'Grandstand': ['grandstand', 'gs'],
+      'Bleachers': ['bleacher', 'bl'],
+      'Loge Box': ['loge box', 'loge'],
+      'Right Field': ['right field', 'rf box', 'rf roof'],
+      'Standing Room': ['standing room', 'sro'],
+    };
+
     let allGames = [];
     let activeFilters = new Set();
+    let activeSection = null;
+    let expandedGameId = null;
     let currentSort = 'date';
 
     // ── Theme ──
@@ -867,6 +1008,9 @@
       document.documentElement.setAttribute('data-theme', theme);
       const meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.content = theme === 'light' ? '#f8f9fa' : '#0a0a0f';
+      // Update iOS status bar style
+      const statusBar = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+      if (statusBar) statusBar.content = theme === 'light' ? 'default' : 'black-translucent';
     }
 
     // ── Boot ──
@@ -875,6 +1019,7 @@
       registerSW();
       detectOffline();
       bindFilters();
+      bindSectionFilters();
       await loadData();
     }
 
@@ -936,6 +1081,51 @@
       });
     }
 
+    function bindSectionFilters() {
+      document.querySelectorAll('.section-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const section = btn.dataset.section;
+          if (activeSection === section) {
+            activeSection = null;
+            btn.classList.remove('active');
+          } else {
+            // Deactivate previous
+            document.querySelectorAll('.section-pill.active').forEach(b => b.classList.remove('active'));
+            activeSection = section;
+            btn.classList.add('active');
+          }
+          renderGames();
+        });
+      });
+    }
+
+    // ── Section helpers ──
+    function getSectionGroup(sectionName) {
+      const lower = sectionName.toLowerCase();
+      for (const [group, patterns] of Object.entries(SECTION_GROUPS)) {
+        if (patterns.some(p => lower.includes(p))) return group;
+      }
+      return null;
+    }
+
+    function getGameSectionPricing(game) {
+      const sections = game.tickets?.ticketmaster_scraped?.sections;
+      if (!sections || sections.length === 0) return null;
+
+      const grouped = {};
+      for (const s of sections) {
+        const group = getSectionGroup(s.name);
+        if (!group) continue;
+        if (!grouped[group] || s.min_price < grouped[group].min_price) {
+          grouped[group] = { min_price: s.min_price, max_price: s.max_price, listings: s.listings };
+        } else {
+          grouped[group].max_price = Math.max(grouped[group].max_price, s.max_price);
+          grouped[group].listings += s.listings;
+        }
+      }
+      return Object.keys(grouped).length > 0 ? grouped : null;
+    }
+
     function filterAndSort(games) {
       let filtered = [...games];
 
@@ -944,6 +1134,13 @@
       }
       if (activeFilters.has('deals')) {
         filtered = filtered.filter(g => g.price_alert);
+      }
+      if (activeSection) {
+        // Only show games that have pricing for the selected section
+        filtered = filtered.filter(g => {
+          const pricing = getGameSectionPricing(g);
+          return pricing && pricing[activeSection];
+        });
       }
 
       filtered.sort((a, b) => {
@@ -979,10 +1176,32 @@
 
       container.innerHTML = games.map((g, i) => renderCard(g, i)).join('');
 
-      // Bind expand/collapse
+      // Bind expand/collapse + keyboard nav
       container.querySelectorAll('.game-card').forEach(card => {
-        card.querySelector('.card-main').addEventListener('click', () => {
-          card.classList.toggle('expanded');
+        const main = card.querySelector('.card-main');
+        const gameId = card.dataset.gameId;
+
+        // Restore expansion state
+        if (gameId === expandedGameId) card.classList.add('expanded');
+
+        const toggle = () => {
+          const isExpanding = !card.classList.contains('expanded');
+          // Collapse any other expanded card
+          container.querySelectorAll('.game-card.expanded').forEach(c => c.classList.remove('expanded'));
+          if (isExpanding) {
+            card.classList.add('expanded');
+            expandedGameId = gameId;
+          } else {
+            expandedGameId = null;
+          }
+        };
+
+        main.addEventListener('click', toggle);
+        main.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle();
+          }
         });
       });
     }
@@ -1047,9 +1266,19 @@
       // Detail
       const detail = renderDetail(game);
 
+      // Section-specific price for active filter
+      let sectionPriceHtml = '';
+      if (activeSection) {
+        const pricing = getGameSectionPricing(game);
+        if (pricing && pricing[activeSection]) {
+          sectionPriceHtml = `<span class="price-source">${activeSection} from</span>
+            <span class="best-price">$${pricing[activeSection].min_price}</span>`;
+        }
+      }
+
       return `
-        <div class="game-card ${dealClass}" style="${colorStyle} animation-delay:${index * 0.05}s">
-          <div class="card-main">
+        <div class="game-card ${dealClass}" data-game-id="${game.game_id}" style="${colorStyle} animation-delay:${index * 0.05}s">
+          <div class="card-main" tabindex="0" role="button" aria-label="${game.opponent}, ${month} ${day} — ${game.best_available ? '$' + game.best_available.price : 'no pricing'}">
             <div class="date-block">
               <span class="month">${month}</span>
               <span class="day">${day}</span>
@@ -1060,7 +1289,7 @@
               <div class="game-meta">${weather}${pairs}</div>
               ${badges ? `<div class="badges">${badges}</div>` : ''}
             </div>
-            <div class="price-block">${priceHtml}</div>
+            <div class="price-block">${sectionPriceHtml || priceHtml}</div>
           </div>
           <div class="card-detail">${detail}</div>
         </div>`;
@@ -1121,6 +1350,30 @@
           </div>`;
       }
 
+      // Section pricing breakdown
+      let sectionHtml = '';
+      const sectionPricing = getGameSectionPricing(game);
+      if (sectionPricing) {
+        const prioritySections = ['Field Box', 'Aura Club', 'Aura'];
+        const otherSections = Object.keys(sectionPricing).filter(s => !prioritySections.includes(s)).sort();
+        const orderedSections = [...prioritySections.filter(s => sectionPricing[s]), ...otherSections];
+
+        const chips = orderedSections.map(name => {
+          const p = sectionPricing[name];
+          const highlight = prioritySections.includes(name) ? ' highlight' : '';
+          return `<div class="section-chip${highlight}">
+            <span class="section-chip-name">${name}</span>
+            <span class="section-chip-price">$${p.min_price}</span>
+          </div>`;
+        }).join('');
+
+        sectionHtml = `
+          <div class="section-pricing">
+            <div class="section-pricing-label">Sections</div>
+            ${chips}
+          </div>`;
+      }
+
       // Velocity stat bar
       let velocityHtml = '';
       if (game.velocity?.trend && game.velocity.trend !== 'insufficient_data') {
@@ -1174,6 +1427,7 @@
         <div class="detail-inner">
           <div class="detail-divider"></div>
           <div class="price-compare">${tmCard}${sgCard}</div>
+          ${sectionHtml}
           ${velocityHtml}
           <div class="buy-links">${tmLink}${sgLink}</div>
         </div>`;

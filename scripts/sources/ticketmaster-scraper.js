@@ -113,25 +113,62 @@ function parseFacets(data) {
   let overallMax = 0;
   let totalListings = 0;
   const inventoryTypes = new Set();
+  const sectionMap = new Map(); // section name -> { min, max, count }
 
   for (const facet of facets) {
     for (const t of facet.inventoryTypes || []) inventoryTypes.add(t);
     totalListings += facet.count || 0;
+
+    let facetMin = Infinity;
+    let facetMax = 0;
     for (const pr of facet.listPriceRange || []) {
+      if (pr.min < facetMin) facetMin = pr.min;
+      if (pr.max > facetMax) facetMax = pr.max;
       if (pr.min < overallMin) overallMin = pr.min;
       if (pr.max > overallMax) overallMax = pr.max;
+    }
+
+    // Extract section name from facet (TM uses various field names)
+    const sectionName = facet.section || facet.sectionName || facet.name || null;
+    if (sectionName && facetMin !== Infinity) {
+      const existing = sectionMap.get(sectionName);
+      if (existing) {
+        existing.min = Math.min(existing.min, facetMin);
+        existing.max = Math.max(existing.max, facetMax);
+        existing.count += facet.count || 0;
+      } else {
+        sectionMap.set(sectionName, {
+          min: facetMin,
+          max: facetMax,
+          count: facet.count || 0,
+        });
+      }
     }
   }
 
   if (overallMin === Infinity) return null;
 
-  return {
+  // Convert section map to sorted array
+  const sections = [];
+  for (const [name, data] of sectionMap) {
+    sections.push({ name, min_price: data.min, max_price: data.max, listings: data.count });
+  }
+  sections.sort((a, b) => a.min_price - b.min_price);
+
+  const result = {
     min_price: overallMin,
     max_price: overallMax,
     total_listings: totalListings,
     inventory_types: [...inventoryTypes],
     source: 'ticketmaster_scraped',
   };
+
+  // Only include sections array if we found section data
+  if (sections.length > 0) {
+    result.sections = sections;
+  }
+
+  return result;
 }
 
 async function cleanup() {
