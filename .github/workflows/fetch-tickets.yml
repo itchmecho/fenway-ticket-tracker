@@ -1,9 +1,7 @@
 name: Fetch Ticket Prices
 
 on:
-  schedule:
-    - cron: '0 12 * * *' # Daily at 12:00 UTC (8am ET)
-  workflow_dispatch: # Manual trigger from GitHub UI
+  workflow_dispatch: # Manual trigger only — Pi handles scheduled runs
 
 permissions:
   contents: write
