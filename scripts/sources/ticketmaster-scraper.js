@@ -36,27 +36,35 @@ export async function scrapeTmPrices(eventIds) {
       userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     });
 
-    // Process in batches of 10 with a pause between batches
+    // Process in batches, running CONCURRENCY pages in parallel within each batch
     const BATCH_SIZE = 10;
+    const CONCURRENCY = 3;
+
     for (let i = 0; i < eventIds.length; i += BATCH_SIZE) {
       const batch = eventIds.slice(i, i + BATCH_SIZE);
       const batchNum = Math.floor(i / BATCH_SIZE) + 1;
       const totalBatches = Math.ceil(eventIds.length / BATCH_SIZE);
 
       if (totalBatches > 1) {
-        console.log(`[TM-Scraper] Batch ${batchNum}/${totalBatches} (${batch.length} events)`);
+        console.log(`[TM-Scraper] Batch ${batchNum}/${totalBatches} (${batch.length} events, ${CONCURRENCY} concurrent)`);
       }
 
+      // Process batch with concurrency limit
+      const pending = new Set();
       for (const { game_id, tm_event_id } of batch) {
-        try {
-          const data = await scrapeEventPage(tm_event_id);
-          if (data) {
-            results.set(game_id, data);
-          }
-        } catch (err) {
-          console.warn(`[TM-Scraper] Error on ${tm_event_id}: ${err.message}`);
+        const task = scrapeEventPage(tm_event_id)
+          .then(data => { if (data) results.set(game_id, data); })
+          .catch(err => console.warn(`[TM-Scraper] Error on ${tm_event_id}: ${err.message}`))
+          .finally(() => pending.delete(task));
+        pending.add(task);
+
+        // Wait if we've hit the concurrency limit
+        if (pending.size >= CONCURRENCY) {
+          await Promise.race(pending);
         }
       }
+      // Wait for remaining pages in this batch
+      await Promise.all(pending);
 
       // Pause between batches to avoid bot detection
       if (i + BATCH_SIZE < eventIds.length) {
