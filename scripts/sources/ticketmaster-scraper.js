@@ -209,19 +209,43 @@ function parseFacets(data) {
   return result;
 }
 
+// Target section prefixes at Fenway — only keep sections we care about
+const SECTION_FILTERS = [
+  { prefix: 'F', group: 'Field Box' },
+  { prefix: 'AC', group: 'Aura Club' },
+  { prefix: 'AP', group: 'Aura Pavilion' },
+  { prefix: 'AURA', group: 'Aura Pavilion' },
+  { prefix: 'HCB', group: 'Home Club Box' },
+  { prefix: 'PB', group: 'Pavilion Box' },
+  { prefix: 'PC', group: 'Pavilion Club' },
+  { prefix: 'DTC', group: 'Dugout Club' },
+];
+
+function classifySection(name) {
+  const upper = name.toUpperCase();
+  // Check longest prefixes first to avoid false matches (e.g. "F" matching "FB" before "FB" is checked)
+  for (const { prefix, group } of SECTION_FILTERS.sort((a, b) => b.prefix.length - a.prefix.length)) {
+    if (upper.startsWith(prefix)) return group;
+  }
+  return null;
+}
+
 /**
  * Parse the section-level facets response from services.ticketmaster.com.
- * Returns an array of { section, row, offer_id, count } or null.
+ * Filters to target sections only (Field Box, Aura, Club, Pavilion).
  */
 function parseSections(data) {
   const facets = data.facets || [];
   if (facets.length === 0) return null;
 
-  // Aggregate by section name
+  // Aggregate by section name, filtering to target sections
   const sectionMap = new Map();
   for (const facet of facets) {
     const section = facet.section;
     if (!section) continue;
+
+    const group = classifySection(section);
+    if (!group) continue; // Skip sections we don't care about
 
     const existing = sectionMap.get(section);
     const count = facet.count || 0;
@@ -230,6 +254,7 @@ function parseSections(data) {
       existing.rows.add(facet.row || '?');
     } else {
       sectionMap.set(section, {
+        group,
         count,
         rows: new Set([facet.row || '?']),
       });
@@ -240,7 +265,7 @@ function parseSections(data) {
 
   const sections = [];
   for (const [name, info] of sectionMap) {
-    sections.push({ name, listings: info.count, rows: [...info.rows].sort() });
+    sections.push({ name, group: info.group, listings: info.count, rows: [...info.rows].sort() });
   }
   sections.sort((a, b) => b.listings - a.listings);
   return sections;
