@@ -85,28 +85,37 @@ async function scrapeEventPage(tmEventId) {
   const page = await _context.newPage();
   let priceData = null;
 
-  // Listen for the facets response that contains pricing
+  // Listen for both the pricing facets and section-level facets responses
+  let priceResult = null;
+  let sectionResult = null;
+
   const pricingPromise = new Promise((resolve) => {
     const timeout = setTimeout(() => resolve(null), 40000);
 
     page.on('response', async (res) => {
       const url = res.url();
-      // Match the facets endpoint that returns listpricerange
-      if (url.includes('offeradapter.ticketmaster.com') &&
-          url.includes(tmEventId) &&
-          url.includes('facets') &&
-          url.includes('listpricerange') &&
-          url.includes('inventorytypes') &&
-          res.status() === 200) {
-        try {
+      if (!url.includes(tmEventId) || !url.includes('facets') || res.status() !== 200) return;
+
+      try {
+        // Pricing facets (offeradapter, has listpricerange + inventorytypes)
+        if (url.includes('offeradapter.ticketmaster.com') &&
+            url.includes('listpricerange') &&
+            url.includes('inventorytypes')) {
           const data = await res.json();
-          const parsed = parseFacets(data);
-          if (parsed) {
-            clearTimeout(timeout);
-            resolve(parsed);
-          }
-        } catch {}
-      }
+          priceResult = parseFacets(data);
+          if (priceResult && sectionResult) { clearTimeout(timeout); resolve(true); }
+          else if (priceResult) { setTimeout(() => resolve(true), 5000); } // give sections 5s to arrive
+        }
+
+        // Section-level facets (services.ticketmaster.com, has section + offer + area)
+        if (url.includes('services.ticketmaster.com') &&
+            url.includes('section') &&
+            url.includes('offer')) {
+          const data = await res.json();
+          sectionResult = parseSections(data);
+          if (priceResult) { clearTimeout(timeout); resolve(true); }
+        }
+      } catch {}
     });
   });
 
@@ -114,10 +123,16 @@ async function scrapeEventPage(tmEventId) {
     const url = `https://www.ticketmaster.com/event/${tmEventId}`;
     // Don't wait for full networkidle — just wait for the pricing response
     page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
-    priceData = await pricingPromise;
+    await pricingPromise;
 
-    if (priceData) {
-      console.log(`[TM-Scraper] ${tmEventId}: $${priceData.min_price} - $${priceData.max_price} (${priceData.total_listings} listings)`);
+    if (priceResult) {
+      // Merge section data into price result
+      if (sectionResult && sectionResult.length > 0) {
+        priceResult.sections = sectionResult;
+      }
+      priceData = priceResult;
+      const secCount = sectionResult?.length || 0;
+      console.log(`[TM-Scraper] ${tmEventId}: $${priceData.min_price} - $${priceData.max_price} (${priceData.total_listings} listings, ${secCount} sections)`);
     } else {
       console.log(`[TM-Scraper] ${tmEventId}: no pricing response intercepted`);
     }
@@ -192,6 +207,43 @@ function parseFacets(data) {
   }
 
   return result;
+}
+
+/**
+ * Parse the section-level facets response from services.ticketmaster.com.
+ * Returns an array of { section, row, offer_id, count } or null.
+ */
+function parseSections(data) {
+  const facets = data.facets || [];
+  if (facets.length === 0) return null;
+
+  // Aggregate by section name
+  const sectionMap = new Map();
+  for (const facet of facets) {
+    const section = facet.section;
+    if (!section) continue;
+
+    const existing = sectionMap.get(section);
+    const count = facet.count || 0;
+    if (existing) {
+      existing.count += count;
+      existing.rows.add(facet.row || '?');
+    } else {
+      sectionMap.set(section, {
+        count,
+        rows: new Set([facet.row || '?']),
+      });
+    }
+  }
+
+  if (sectionMap.size === 0) return null;
+
+  const sections = [];
+  for (const [name, info] of sectionMap) {
+    sections.push({ name, listings: info.count, rows: [...info.rows].sort() });
+  }
+  sections.sort((a, b) => b.listings - a.listings);
+  return sections;
 }
 
 async function cleanup() {
