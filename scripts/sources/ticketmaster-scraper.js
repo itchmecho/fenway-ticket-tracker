@@ -89,34 +89,49 @@ async function scrapeEventPage(tmEventId) {
   let priceResult = null;
   let sectionResult = null;
 
-  // Collect responses as they arrive
-  page.on('response', async (res) => {
-    const url = res.url();
-    if (!url.includes(tmEventId) || !url.includes('facets') || res.status() !== 200) return;
+  // Wait for pricing, then give sections extra time to arrive
+  const done = new Promise((resolve) => {
+    const timeout = setTimeout(() => resolve(null), 40000);
 
-    try {
-      // Pricing facets (offeradapter, has listpricerange + inventorytypes)
-      if (url.includes('offeradapter.ticketmaster.com') &&
-          url.includes('listpricerange') &&
-          url.includes('inventorytypes')) {
-        const data = await res.json();
-        priceResult = parseFacets(data);
-      }
+    page.on('response', async (res) => {
+      const url = res.url();
+      if (!url.includes(tmEventId) || !url.includes('facets') || res.status() !== 200) return;
 
-      // Section-level facets (services.ticketmaster.com, has section + offer + area)
-      if ((url.includes('services.ticketmaster.com') || url.includes('offeradapter.ticketmaster.com')) &&
-          url.includes('section') &&
-          url.includes('offer')) {
-        const data = await res.json();
-        sectionResult = parseSections(data);
+      try {
+        // Pricing facets (offeradapter, has listpricerange + inventorytypes)
+        if (url.includes('offeradapter.ticketmaster.com') &&
+            url.includes('listpricerange') &&
+            url.includes('inventorytypes')) {
+          const data = await res.json();
+          priceResult = parseFacets(data);
+        }
+
+        // Section-level facets (services.ticketmaster.com, has section + offer)
+        if ((url.includes('services.ticketmaster.com') || url.includes('offeradapter.ticketmaster.com')) &&
+            url.includes('section') &&
+            url.includes('offer')) {
+          const data = await res.json();
+          sectionResult = parseSections(data);
+        }
+
+        // If we have both, done immediately
+        if (priceResult && sectionResult) { clearTimeout(timeout); resolve(true); }
+      } catch {}
+    });
+
+    // Also resolve after pricing arrives + 15s grace period for sections
+    const checkInterval = setInterval(() => {
+      if (priceResult) {
+        clearInterval(checkInterval);
+        setTimeout(() => { clearTimeout(timeout); resolve(true); }, 15000);
       }
-    } catch {}
+    }, 1000);
   });
 
   try {
     const url = `https://www.ticketmaster.com/event/${tmEventId}`;
-    // Wait for networkidle so all API calls (pricing + sections) complete
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
+    page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
+    await done;
 
     if (priceResult) {
       // Merge section data into price result
