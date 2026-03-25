@@ -14,7 +14,7 @@ export async function fetchSchedule() {
   const url = `${BASE_URL}/schedule?sportId=1&teamId=${RED_SOX_TEAM_ID}&gameType=R&season=${season}`;
 
   console.log(`[MLB] Fetching ${season} Red Sox schedule...`);
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
 
   if (!res.ok) {
     throw new Error(`[MLB] Schedule fetch failed: ${res.status} ${res.statusText}`);

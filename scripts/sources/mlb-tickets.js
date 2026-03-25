@@ -16,7 +16,13 @@ export async function fetchMlbTickets() {
 
   console.log('[MLB-Tickets] Fetching primary market ticket links...');
 
-  const res = await fetch(url);
+  let res;
+  try {
+    res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+  } catch (err) {
+    console.warn(`[MLB-Tickets] Request failed: ${err.message} — skipping`);
+    return new Map();
+  }
   if (!res.ok) {
     console.warn(`[MLB-Tickets] HTTP ${res.status} — skipping`);
     return new Map();

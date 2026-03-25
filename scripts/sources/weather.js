@@ -76,7 +76,14 @@ export async function fetchWeather(games, config) {
   const url = `${BASE_URL}?latitude=${FENWAY_LAT}&longitude=${FENWAY_LON}&daily=temperature_2m_max,precipitation_sum,weathercode&timezone=America/New_York&start_date=${startDate}&end_date=${endDate}`;
 
   console.log(`[Weather] Fetching forecast for ${dates.length} games (${startDate} to ${endDate})...`);
-  const res = await fetch(url);
+
+  let res;
+  try {
+    res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+  } catch (err) {
+    console.warn(`[Weather] Request failed: ${err.message} — skipping weather data`);
+    return weatherMap;
+  }
 
   if (!res.ok) {
     console.warn(`[Weather] HTTP ${res.status} — skipping weather data`);
