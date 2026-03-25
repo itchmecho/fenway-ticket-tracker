@@ -1127,14 +1127,12 @@
 
       const grouped = {};
       for (const s of sections) {
-        const group = getSectionGroup(s.name);
-        if (!group) continue;
-        if (!grouped[group] || s.min_price < grouped[group].min_price) {
-          grouped[group] = { min_price: s.min_price, max_price: s.max_price, listings: s.listings };
-        } else {
-          grouped[group].max_price = Math.max(grouped[group].max_price, s.max_price);
-          grouped[group].listings += s.listings;
+        const group = s.group || 'Other';
+        if (!grouped[group]) {
+          grouped[group] = { listings: 0, sections: 0 };
         }
+        grouped[group].listings += s.listings || 0;
+        grouped[group].sections += 1;
       }
       return Object.keys(grouped).length > 0 ? grouped : null;
     }
@@ -1285,8 +1283,8 @@
       if (activeSection) {
         const pricing = getGameSectionPricing(game);
         if (pricing && pricing[activeSection]) {
-          sectionPriceHtml = `<span class="price-source">${activeSection} from</span>
-            <span class="best-price">$${pricing[activeSection].min_price}</span>`;
+          sectionPriceHtml = `<span class="price-source">${activeSection}</span>
+            <span class="best-price">${pricing[activeSection].listings} avail</span>`;
         }
       }
 
@@ -1368,7 +1366,7 @@
       let sectionHtml = '';
       const sectionPricing = getGameSectionPricing(game);
       if (sectionPricing) {
-        const prioritySections = ['Field Box', 'Aura Club', 'Aura'];
+        const prioritySections = ['Field Box', 'Aura Club', 'Aura Pavilion'];
         const otherSections = Object.keys(sectionPricing).filter(s => !prioritySections.includes(s)).sort();
         const orderedSections = [...prioritySections.filter(s => sectionPricing[s]), ...otherSections];
 
@@ -1377,13 +1375,13 @@
           const highlight = prioritySections.includes(name) ? ' highlight' : '';
           return `<div class="section-chip${highlight}">
             <span class="section-chip-name">${name}</span>
-            <span class="section-chip-price">$${p.min_price}</span>
+            <span class="section-chip-price">${p.listings} listings</span>
           </div>`;
         }).join('');
 
         sectionHtml = `
           <div class="section-pricing">
-            <div class="section-pricing-label">Sections</div>
+            <div class="section-pricing-label">Available Sections</div>
             ${chips}
           </div>`;
       }
