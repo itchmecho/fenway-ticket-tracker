@@ -1,0 +1,3781 @@
+{
+  "generated_at": "2026-04-08T22:00:01.650Z",
+  "games": [
+    {
+      "game_id": "mlb-824779",
+      "date": "2026-04-08",
+      "day_of_week": "Wednesday",
+      "opponent": "Milwaukee Brewers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": null,
+        "seatgeek": null
+      },
+      "primary_market": null,
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824778",
+      "date": "2026-04-17",
+      "day_of_week": "Friday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 40,
+          "max_price": 1308,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k9",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 40,
+          "max_price": 1308,
+          "total_listings": 3771,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681648",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 40,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 8,
+        "change_pct_7d": 25,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824775",
+      "date": "2026-04-18",
+      "day_of_week": "Saturday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 63,
+          "max_price": 2055,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8kb",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 63,
+          "max_price": 2055,
+          "total_listings": 3980,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681649",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 63,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 17,
+        "change_pct_7d": 37,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824777",
+      "date": "2026-04-19",
+      "day_of_week": "Sunday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8k_",
+          "source": "primary"
+        },
+        "seatgeek": null
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681650",
+        "sold_out": false
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824776",
+      "date": "2026-04-20",
+      "day_of_week": "Monday",
+      "opponent": "Detroit Tigers",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 79,
+          "max_price": 6870,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FZ",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 79,
+          "max_price": 6870,
+          "total_listings": 3221,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681651",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 79,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "stable",
+        "change_7d": 1,
+        "change_pct_7d": 1.3,
+        "trend": "stable"
+      }
+    },
+    {
+      "game_id": "mlb-824773",
+      "date": "2026-04-21",
+      "day_of_week": "Tuesday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 67,
+          "max_price": 2815,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fv",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 67,
+          "max_price": 2815,
+          "total_listings": 3835,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681652",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 67,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 8,
+        "change_pct_7d": 13.6,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824774",
+      "date": "2026-04-22",
+      "day_of_week": "Wednesday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 63,
+          "max_price": 2901,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fe",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 63,
+          "max_price": 2901,
+          "total_listings": 4197,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681653",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 63,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 8,
+        "change_pct_7d": 14.5,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824770",
+      "date": "2026-04-23",
+      "day_of_week": "Thursday",
+      "opponent": "New York Yankees",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 74,
+          "max_price": 2689,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fd",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 74,
+          "max_price": 2689,
+          "total_listings": 3658,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681654",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 74,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -2,
+        "change_pct_7d": -2.6,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824772",
+      "date": "2026-05-01",
+      "day_of_week": "Friday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 40,
+          "max_price": 1651,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F7",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 40,
+          "max_price": 1651,
+          "total_listings": 3502,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681655",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 40,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 5,
+        "change_pct_7d": 14.3,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824771",
+      "date": "2026-05-02",
+      "day_of_week": "Saturday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 59,
+          "max_price": 1651,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fk",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 59,
+          "max_price": 1651,
+          "total_listings": 3334,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681656",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 59,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 5,
+        "change_pct_7d": 9.3,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824769",
+      "date": "2026-05-03",
+      "day_of_week": "Sunday",
+      "opponent": "Houston Astros",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 50,
+          "max_price": 1472,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FF",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 50,
+          "max_price": 1472,
+          "total_listings": 3122,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped",
+          "sections": [
+            {
+              "name": "PB08",
+              "group": "Pavilion Box",
+              "listings": 26,
+              "rows": [
+                "B",
+                "D",
+                "b",
+                "e"
+              ]
+            },
+            {
+              "name": "PB02",
+              "group": "Pavilion Box",
+              "listings": 23,
+              "rows": [
+                "C",
+                "D",
+                "a"
+              ]
+            },
+            {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 20,
+              "rows": [
+                "B",
+                "C",
+                "H",
+                "K",
+                "M"
+              ]
+            },
+            {
+              "name": "F21",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "G",
+                "H",
+                "J",
+                "L",
+                "M"
+              ]
+            },
+            {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "F",
+                "H",
+                "M"
+              ]
+            },
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 17,
+              "rows": [
+                "E",
+                "G",
+                "H",
+                "M",
+                "f",
+                "g"
+              ]
+            },
+            {
+              "name": "F50",
+              "group": "Field Box",
+              "listings": 17,
+              "rows": [
+                "E",
+                "F",
+                "G",
+                "L",
+                "m"
+              ]
+            },
+            {
+              "name": "F39",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "C",
+                "D",
+                "K",
+                "L",
+                "d",
+                "m"
+              ]
+            },
+            {
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "G",
+                "K",
+                "M",
+                "d",
+                "h",
+                "m"
+              ]
+            },
+            {
+              "name": "F70",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "B",
+                "E",
+                "L",
+                "M"
+              ]
+            },
+            {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "J",
+                "M",
+                "c",
+                "g"
+              ]
+            },
+            {
+              "name": "F14",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "B",
+                "D",
+                "J",
+                "L"
+              ]
+            },
+            {
+              "name": "F38",
+              "group": "Field Box",
+              "listings": 15,
+              "rows": [
+                "A",
+                "F",
+                "H",
+                "M",
+                "aaa"
+              ]
+            },
+            {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 15,
+              "rows": [
+                "A",
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "F34",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "D",
+                "J",
+                "a",
+                "c",
+                "e"
+              ]
+            },
+            {
+              "name": "F69",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "D",
+                "K",
+                "M",
+                "b",
+                "h"
+              ]
+            },
+            {
+              "name": "PB01",
+              "group": "Pavilion Box",
+              "listings": 14,
+              "rows": [
+                "A",
+                "B",
+                "D",
+                "E"
+              ]
+            },
+            {
+              "name": "PB05",
+              "group": "Pavilion Box",
+              "listings": 13,
+              "rows": [
+                "B",
+                "D",
+                "e"
+              ]
+            },
+            {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 13,
+              "rows": [
+                "A",
+                "C"
+              ]
+            },
+            {
+              "name": "F18",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "A",
+                "B",
+                "D",
+                "K"
+              ]
+            },
+            {
+              "name": "F19",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "B",
+                "G",
+                "a",
+                "l"
+              ]
+            },
+            {
+              "name": "F27",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "J",
+                "K",
+                "M",
+                "e"
+              ]
+            },
+            {
+              "name": "F52",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "A",
+                "J",
+                "K",
+                "M"
+              ]
+            },
+            {
+              "name": "F47",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "C",
+                "G",
+                "J",
+                "K",
+                "b"
+              ]
+            },
+            {
+              "name": "F48",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "J",
+                "K",
+                "m"
+              ]
+            },
+            {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "E",
+                "F",
+                "K"
+              ]
+            },
+            {
+              "name": "F20",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "E",
+                "H",
+                "M"
+              ]
+            },
+            {
+              "name": "F16",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "B",
+                "H",
+                "J"
+              ]
+            },
+            {
+              "name": "F73",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "K",
+                "L"
+              ]
+            },
+            {
+              "name": "F77",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "D",
+                "F",
+                "K"
+              ]
+            },
+            {
+              "name": "F71",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "E",
+                "F",
+                "L",
+                "j"
+              ]
+            },
+            {
+              "name": "PB11",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "C"
+              ]
+            },
+            {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "B",
+                "D",
+                "E",
+                "e"
+              ]
+            },
+            {
+              "name": "F25",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "H",
+                "K"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F11",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "PB06",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F75",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "f",
+                "l"
+              ]
+            },
+            {
+              "name": "F28",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "k"
+              ]
+            },
+            {
+              "name": "PB03",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "B"
+              ]
+            },
+            {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "L",
+                "a"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "E"
+              ]
+            },
+            {
+              "name": "PB12",
+              "group": "Pavilion Box",
+              "listings": 7,
+              "rows": [
+                "A",
+                "C"
+              ]
+            },
+            {
+              "name": "F32",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "E"
+              ]
+            },
+            {
+              "name": "F31",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "H",
+                "c",
+                "m"
+              ]
+            },
+            {
+              "name": "F57",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "J",
+                "K",
+                "g"
+              ]
+            },
+            {
+              "name": "F13",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "L",
+                "j"
+              ]
+            },
+            {
+              "name": "F61",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "J",
+                "f"
+              ]
+            },
+            {
+              "name": "F76",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "K",
+                "g"
+              ]
+            },
+            {
+              "name": "F60",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "C",
+                "E"
+              ]
+            },
+            {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "K",
+                "h"
+              ]
+            },
+            {
+              "name": "F67",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "M",
+                "d"
+              ]
+            },
+            {
+              "name": "F62",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "H",
+                "d"
+              ]
+            },
+            {
+              "name": "F40",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "G"
+              ]
+            },
+            {
+              "name": "F35",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "M",
+                "l"
+              ]
+            },
+            {
+              "name": "AP01",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "name": "DTC1",
+              "group": "Dugout Club",
+              "listings": 4,
+              "rows": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "name": "FCLUB 74",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "F68",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "F9",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A",
+                "j"
+              ]
+            },
+            {
+              "name": "F74",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "K",
+                "L"
+              ]
+            },
+            {
+              "name": "F22",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "F",
+                "d"
+              ]
+            },
+            {
+              "name": "F72",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "C"
+              ]
+            },
+            {
+              "name": "F56",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "G",
+                "c"
+              ]
+            },
+            {
+              "name": "F63",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "AC04",
+              "group": "Aura Club",
+              "listings": 4,
+              "rows": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "name": "F78",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "PC11",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "PC01",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC05",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC06",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "F41",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "C",
+                "J"
+              ]
+            },
+            {
+              "name": "F23",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "G"
+              ]
+            },
+            {
+              "name": "F53",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "F64",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "E"
+              ]
+            },
+            {
+              "name": "F49",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A",
+                "f"
+              ]
+            },
+            {
+              "name": "F15",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A"
+              ]
+            },
+            {
+              "name": "F79",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "d"
+              ]
+            },
+            {
+              "name": "AP03",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "F82",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "K"
+              ]
+            },
+            {
+              "name": "AURA PAVILION 6",
+              "group": "Aura Pavilion",
+              "listings": 3,
+              "rows": [
+                "2",
+                "4"
+              ]
+            },
+            {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 3,
+              "rows": [
+                "M"
+              ]
+            },
+            {
+              "name": "F54",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "F"
+              ]
+            },
+            {
+              "name": "F58",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "C"
+              ]
+            },
+            {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "2"
+              ]
+            },
+            {
+              "name": "DTC2",
+              "group": "Dugout Club",
+              "listings": 2,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "FCLUB 54",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "F17",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "D"
+              ]
+            },
+            {
+              "name": "AP10",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "AP13",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "AP05",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "F10",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "a"
+              ]
+            },
+            {
+              "name": "F26",
+              "group": "Field Box",
+              "listings": 1,
+              "rows": [
+                "k"
+              ]
+            }
+          ]
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681657",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 50,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -6,
+        "change_pct_7d": -10.7,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824767",
+      "date": "2026-05-07",
+      "day_of_week": "Thursday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 32,
+          "max_price": 1233,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F8",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 32,
+          "max_price": 1233,
+          "total_listings": 3395,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681658",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 32,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -1,
+        "change_pct_7d": -3,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824768",
+      "date": "2026-05-08",
+      "day_of_week": "Friday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 37,
+          "max_price": 1392,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F3",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 37,
+          "max_price": 1392,
+          "total_listings": 3712,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681659",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 37,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 1,
+        "change_pct_7d": 2.8,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824766",
+      "date": "2026-05-09",
+      "day_of_week": "Saturday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 46,
+          "max_price": 1976,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Ff",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 46,
+          "max_price": 1976,
+          "total_listings": 3403,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681660",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 46,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -7,
+        "change_pct_7d": -13.2,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824765",
+      "date": "2026-05-10",
+      "day_of_week": "Sunday",
+      "opponent": "Tampa Bay Rays",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 43,
+          "max_price": 1652,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fp",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 43,
+          "max_price": 1652,
+          "total_listings": 3267,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681661",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 43,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 8,
+        "change_pct_7d": 22.9,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824764",
+      "date": "2026-05-12",
+      "day_of_week": "Tuesday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 49,
+          "max_price": 1851,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F9",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 49,
+          "max_price": 1851,
+          "total_listings": 3232,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681662",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 49,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "rising",
+        "change_7d": 13,
+        "change_pct_7d": 36.1,
+        "trend": "rising"
+      }
+    },
+    {
+      "game_id": "mlb-824763",
+      "date": "2026-05-13",
+      "day_of_week": "Wednesday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 38,
+          "max_price": 1601,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fb",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 38,
+          "max_price": 1601,
+          "total_listings": 3396,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681663",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 38,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -8,
+        "change_pct_7d": -17.4,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824762",
+      "date": "2026-05-14",
+      "day_of_week": "Thursday",
+      "opponent": "Philadelphia Phillies",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F_",
+          "source": "primary"
+        },
+        "seatgeek": null
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681664",
+        "sold_out": false
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824761",
+      "date": "2026-05-22",
+      "day_of_week": "Friday",
+      "opponent": "Minnesota Twins",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 41,
+          "max_price": 8190,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FO",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 41,
+          "max_price": 8190,
+          "total_listings": 3437,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped",
+          "sections": [
+            {
+              "name": "F39",
+              "group": "Field Box",
+              "listings": 29,
+              "rows": [
+                "A",
+                "C",
+                "D",
+                "J",
+                "K",
+                "g",
+                "h",
+                "m"
+              ]
+            },
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 27,
+              "rows": [
+                "C",
+                "E",
+                "G",
+                "H",
+                "K",
+                "L",
+                "f",
+                "g"
+              ]
+            },
+            {
+              "name": "PB02",
+              "group": "Pavilion Box",
+              "listings": 27,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F21",
+              "group": "Field Box",
+              "listings": 22,
+              "rows": [
+                "G",
+                "H",
+                "J",
+                "K",
+                "L",
+                "M"
+              ]
+            },
+            {
+              "name": "F34",
+              "group": "Field Box",
+              "listings": 20,
+              "rows": [
+                "B",
+                "D",
+                "J",
+                "a",
+                "aaa",
+                "e"
+              ]
+            },
+            {
+              "name": "F14",
+              "group": "Field Box",
+              "listings": 20,
+              "rows": [
+                "B",
+                "L",
+                "M",
+                "a",
+                "f"
+              ]
+            },
+            {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 19,
+              "rows": [
+                "A",
+                "B",
+                "D",
+                "a"
+              ]
+            },
+            {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "J",
+                "M",
+                "d"
+              ]
+            },
+            {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "B",
+                "K",
+                "M",
+                "f",
+                "l"
+              ]
+            },
+            {
+              "name": "PB11",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "A",
+                "B",
+                "C"
+              ]
+            },
+            {
+              "name": "F69",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "D",
+                "K",
+                "M",
+                "b",
+                "c"
+              ]
+            },
+            {
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "G",
+                "K",
+                "M",
+                "d",
+                "h",
+                "m"
+              ]
+            },
+            {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "D",
+                "E",
+                "F",
+                "K"
+              ]
+            },
+            {
+              "name": "F27",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "H",
+                "J",
+                "M",
+                "d",
+                "e"
+              ]
+            },
+            {
+              "name": "F38",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "E",
+                "F",
+                "H",
+                "J",
+                "M",
+                "aaa"
+              ]
+            },
+            {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 15,
+              "rows": [
+                "B",
+                "D",
+                "E",
+                "b",
+                "e"
+              ]
+            },
+            {
+              "name": "F50",
+              "group": "Field Box",
+              "listings": 15,
+              "rows": [
+                "F",
+                "G",
+                "H",
+                "L",
+                "m"
+              ]
+            },
+            {
+              "name": "F70",
+              "group": "Field Box",
+              "listings": 15,
+              "rows": [
+                "E",
+                "L",
+                "M",
+                "e"
+              ]
+            },
+            {
+              "name": "F60",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "C",
+                "D",
+                "H",
+                "J"
+              ]
+            },
+            {
+              "name": "F52",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "D",
+                "G",
+                "K",
+                "L",
+                "d"
+              ]
+            },
+            {
+              "name": "F19",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "B",
+                "G",
+                "H",
+                "a"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 14,
+              "rows": [
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "PB01",
+              "group": "Pavilion Box",
+              "listings": 14,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F25",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "F",
+                "H",
+                "K",
+                "d"
+              ]
+            },
+            {
+              "name": "F56",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "G",
+                "H",
+                "K",
+                "c",
+                "f"
+              ]
+            },
+            {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 11,
+              "rows": [
+                "J",
+                "L",
+                "a"
+              ]
+            },
+            {
+              "name": "F57",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "J",
+                "K",
+                "c",
+                "g"
+              ]
+            },
+            {
+              "name": "F77",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "J",
+                "L",
+                "aaa"
+              ]
+            },
+            {
+              "name": "F71",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "E",
+                "F",
+                "L",
+                "h"
+              ]
+            },
+            {
+              "name": "F13",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "L",
+                "h"
+              ]
+            },
+            {
+              "name": "F16",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "B",
+                "J"
+              ]
+            },
+            {
+              "name": "F47",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "G",
+                "J",
+                "K"
+              ]
+            },
+            {
+              "name": "F20",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "J",
+                "M"
+              ]
+            },
+            {
+              "name": "F18",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "B",
+                "K"
+              ]
+            },
+            {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "B",
+                "J",
+                "M"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "J",
+                "M"
+              ]
+            },
+            {
+              "name": "PB08",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "PB12",
+              "group": "Pavilion Box",
+              "listings": 9,
+              "rows": [
+                "A",
+                "B"
+              ]
+            },
+            {
+              "name": "F23",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "G",
+                "J",
+                "h"
+              ]
+            },
+            {
+              "name": "F35",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "M",
+                "d",
+                "l"
+              ]
+            },
+            {
+              "name": "F73",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "L"
+              ]
+            },
+            {
+              "name": "PB06",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "PB05",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "F48",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "K"
+              ]
+            },
+            {
+              "name": "F64",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "E",
+                "L"
+              ]
+            },
+            {
+              "name": "F55",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "B",
+                "f"
+              ]
+            },
+            {
+              "name": "PB03",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "B"
+              ]
+            },
+            {
+              "name": "F32",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "E"
+              ]
+            },
+            {
+              "name": "F31",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "H",
+                "c",
+                "m"
+              ]
+            },
+            {
+              "name": "F76",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "C",
+                "K"
+              ]
+            },
+            {
+              "name": "F53",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "L"
+              ]
+            },
+            {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "J",
+                "c"
+              ]
+            },
+            {
+              "name": "F28",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "J",
+                "c"
+              ]
+            },
+            {
+              "name": "F62",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "E",
+                "H"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "E",
+                "m"
+              ]
+            },
+            {
+              "name": "F49",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "A",
+                "f",
+                "h"
+              ]
+            },
+            {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 5,
+              "rows": [
+                "E",
+                "f"
+              ]
+            },
+            {
+              "name": "AP08",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "F17",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "D",
+                "l"
+              ]
+            },
+            {
+              "name": "DTC6",
+              "group": "Dugout Club",
+              "listings": 4,
+              "rows": [
+                "2",
+                "6"
+              ]
+            },
+            {
+              "name": "F22",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "F",
+                "d"
+              ]
+            },
+            {
+              "name": "F75",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A",
+                "G"
+              ]
+            },
+            {
+              "name": "F54",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "E",
+                "F"
+              ]
+            },
+            {
+              "name": "F74",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "D",
+                "J"
+              ]
+            },
+            {
+              "name": "F67",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "M"
+              ]
+            },
+            {
+              "name": "F63",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "F68",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "F61",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J"
+              ]
+            },
+            {
+              "name": "F78",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "g"
+              ]
+            },
+            {
+              "name": "AP10",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "2",
+                "4"
+              ]
+            },
+            {
+              "name": "PC05",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC01",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC06",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "F41",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J"
+              ]
+            },
+            {
+              "name": "FBC71",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "AAA"
+              ]
+            },
+            {
+              "name": "F79",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "d"
+              ]
+            },
+            {
+              "name": "AC02",
+              "group": "Aura Club",
+              "listings": 2,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "F80",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "f"
+              ]
+            },
+            {
+              "name": "AC04",
+              "group": "Aura Club",
+              "listings": 2,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "F81",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "f"
+              ]
+            },
+            {
+              "name": "F45",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "a"
+              ]
+            },
+            {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "F15",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "a"
+              ]
+            },
+            {
+              "name": "F26",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "k"
+              ]
+            },
+            {
+              "name": "F30",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "d"
+              ]
+            },
+            {
+              "name": "AP07",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "FCLUB 54",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "F29",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "D"
+              ]
+            }
+          ]
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681665",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 41,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -8,
+        "change_pct_7d": -16.3,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824760",
+      "date": "2026-05-23",
+      "day_of_week": "Saturday",
+      "opponent": "Minnesota Twins",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": null,
+          "max_price": null,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F-",
+          "source": "primary"
+        },
+        "seatgeek": null
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681666",
+        "sold_out": false
+      },
+      "best_available": null,
+      "price_alert": false,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824759",
+      "date": "2026-05-24",
+      "day_of_week": "Sunday",
+      "opponent": "Minnesota Twins",
+      "is_preferred_day": true,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 57,
+          "max_price": 1652,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fx",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 57,
+          "max_price": 1652,
+          "total_listings": 3304,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped",
+          "sections": [
+            {
+              "name": "F39",
+              "group": "Field Box",
+              "listings": 30,
+              "rows": [
+                "A",
+                "C",
+                "D",
+                "J",
+                "K",
+                "M",
+                "d",
+                "h",
+                "m"
+              ]
+            },
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 23,
+              "rows": [
+                "C",
+                "E",
+                "G",
+                "H",
+                "M",
+                "f",
+                "g"
+              ]
+            },
+            {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 23,
+              "rows": [
+                "B",
+                "C",
+                "F",
+                "G",
+                "K",
+                "M",
+                "f"
+              ]
+            },
+            {
+              "name": "PB02",
+              "group": "Pavilion Box",
+              "listings": 23,
+              "rows": [
+                "B",
+                "C",
+                "D",
+                "a"
+              ]
+            },
+            {
+              "name": "F38",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "C",
+                "F",
+                "H",
+                "J",
+                "M",
+                "aaa"
+              ]
+            },
+            {
+              "name": "F50",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "B",
+                "E",
+                "F",
+                "G",
+                "L",
+                "m"
+              ]
+            },
+            {
+              "name": "F21",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "G",
+                "H",
+                "K",
+                "L",
+                "M"
+              ]
+            },
+            {
+              "name": "PB01",
+              "group": "Pavilion Box",
+              "listings": 18,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "a",
+                "d"
+              ]
+            },
+            {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "H",
+                "J"
+              ]
+            },
+            {
+              "name": "F14",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "J",
+                "L",
+                "M",
+                "f"
+              ]
+            },
+            {
+              "name": "PB08",
+              "group": "Pavilion Box",
+              "listings": 16,
+              "rows": [
+                "B",
+                "D",
+                "e"
+              ]
+            },
+            {
+              "name": "F34",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "B",
+                "D",
+                "J",
+                "a",
+                "c",
+                "m"
+              ]
+            },
+            {
+              "name": "F69",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "D",
+                "K",
+                "M",
+                "b"
+              ]
+            },
+            {
+              "name": "F27",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "J",
+                "K",
+                "M",
+                "d",
+                "e"
+              ]
+            },
+            {
+              "name": "F60",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "C",
+                "D",
+                "H",
+                "J"
+              ]
+            },
+            {
+              "name": "PB11",
+              "group": "Pavilion Box",
+              "listings": 14,
+              "rows": [
+                "A",
+                "B",
+                "C"
+              ]
+            },
+            {
+              "name": "F48",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "A",
+                "J",
+                "K",
+                "m"
+              ]
+            },
+            {
+              "name": "F71",
+              "group": "Field Box",
+              "listings": 13,
+              "rows": [
+                "D",
+                "E",
+                "L",
+                "c",
+                "d",
+                "k"
+              ]
+            },
+            {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 13,
+              "rows": [
+                "D",
+                "E",
+                "F",
+                "K"
+              ]
+            },
+            {
+              "name": "F70",
+              "group": "Field Box",
+              "listings": 13,
+              "rows": [
+                "E",
+                "L",
+                "M"
+              ]
+            },
+            {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 13,
+              "rows": [
+                "A",
+                "C"
+              ]
+            },
+            {
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "G",
+                "K",
+                "d",
+                "h"
+              ]
+            },
+            {
+              "name": "F52",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "D",
+                "G",
+                "M",
+                "d"
+              ]
+            },
+            {
+              "name": "F16",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "B",
+                "E",
+                "H",
+                "J"
+              ]
+            },
+            {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "J",
+                "M",
+                "g"
+              ]
+            },
+            {
+              "name": "PB05",
+              "group": "Pavilion Box",
+              "listings": 12,
+              "rows": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "K",
+                "c",
+                "e",
+                "h"
+              ]
+            },
+            {
+              "name": "F64",
+              "group": "Field Box",
+              "listings": 11,
+              "rows": [
+                "E",
+                "J",
+                "L"
+              ]
+            },
+            {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "J",
+                "L",
+                "m"
+              ]
+            },
+            {
+              "name": "F53",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "D",
+                "E",
+                "L"
+              ]
+            },
+            {
+              "name": "F19",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "G",
+                "H",
+                "a"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F25",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "H",
+                "K"
+              ]
+            },
+            {
+              "name": "F74",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "D",
+                "E",
+                "K",
+                "j"
+              ]
+            },
+            {
+              "name": "F57",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "K",
+                "c",
+                "g"
+              ]
+            },
+            {
+              "name": "F67",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "M"
+              ]
+            },
+            {
+              "name": "F20",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "F",
+                "J"
+              ]
+            },
+            {
+              "name": "F11",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "F77",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "D",
+                "J",
+                "L"
+              ]
+            },
+            {
+              "name": "F73",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "K",
+                "L"
+              ]
+            },
+            {
+              "name": "F13",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "L"
+              ]
+            },
+            {
+              "name": "PB06",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "name": "F28",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "k"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "K"
+              ]
+            },
+            {
+              "name": "PB03",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "B"
+              ]
+            },
+            {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 7,
+              "rows": [
+                "E",
+                "M",
+                "f"
+              ]
+            },
+            {
+              "name": "F56",
+              "group": "Field Box",
+              "listings": 7,
+              "rows": [
+                "G",
+                "H",
+                "K",
+                "c"
+              ]
+            },
+            {
+              "name": "F32",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "E"
+              ]
+            },
+            {
+              "name": "F31",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "H",
+                "c",
+                "m"
+              ]
+            },
+            {
+              "name": "F23",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "G",
+                "J"
+              ]
+            },
+            {
+              "name": "F47",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "C",
+                "G",
+                "J"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "C",
+                "M"
+              ]
+            },
+            {
+              "name": "F76",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "K",
+                "g"
+              ]
+            },
+            {
+              "name": "F10",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "F",
+                "c",
+                "k"
+              ]
+            },
+            {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 6,
+              "rows": [
+                "B",
+                "D",
+                "b"
+              ]
+            },
+            {
+              "name": "PB12",
+              "group": "Pavilion Box",
+              "listings": 6,
+              "rows": [
+                "B",
+                "C"
+              ]
+            },
+            {
+              "name": "F75",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "A",
+                "l"
+              ]
+            },
+            {
+              "name": "F17",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "D",
+                "l"
+              ]
+            },
+            {
+              "name": "AP08",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "F54",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "E",
+                "F"
+              ]
+            },
+            {
+              "name": "F35",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "M",
+                "l"
+              ]
+            },
+            {
+              "name": "F58",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "C"
+              ]
+            },
+            {
+              "name": "F18",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "K"
+              ]
+            },
+            {
+              "name": "F61",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J"
+              ]
+            },
+            {
+              "name": "F68",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "L"
+              ]
+            },
+            {
+              "name": "F72",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "C"
+              ]
+            },
+            {
+              "name": "AP12",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "1",
+                "4"
+              ]
+            },
+            {
+              "name": "F33",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "m"
+              ]
+            },
+            {
+              "name": "PC01",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC05",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "PC06",
+              "group": "Pavilion Club",
+              "listings": 4,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "F62",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "H"
+              ]
+            },
+            {
+              "name": "F41",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J"
+              ]
+            },
+            {
+              "name": "F55",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "B"
+              ]
+            },
+            {
+              "name": "F49",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A",
+                "h"
+              ]
+            },
+            {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "2"
+              ]
+            },
+            {
+              "name": "AP01",
+              "group": "Aura Pavilion",
+              "listings": 4,
+              "rows": [
+                "b",
+                "g"
+              ]
+            },
+            {
+              "name": "AC02",
+              "group": "Aura Club",
+              "listings": 2,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "AP09",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "4"
+              ]
+            },
+            {
+              "name": "DTC6",
+              "group": "Dugout Club",
+              "listings": 2,
+              "rows": [
+                "6"
+              ]
+            },
+            {
+              "name": "F9",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "A"
+              ]
+            },
+            {
+              "name": "F45",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "a"
+              ]
+            },
+            {
+              "name": "F30",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "l"
+              ]
+            },
+            {
+              "name": "F22",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "d"
+              ]
+            },
+            {
+              "name": "F15",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "l"
+              ]
+            },
+            {
+              "name": "AP07",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "FCLUB 54",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "F40",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "G"
+              ]
+            },
+            {
+              "name": "F44",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "e"
+              ]
+            },
+            {
+              "name": "F29",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "D"
+              ]
+            }
+          ]
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681667",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 57,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "stable",
+        "change_7d": 0,
+        "change_pct_7d": 0,
+        "trend": "stable"
+      }
+    },
+    {
+      "game_id": "mlb-824758",
+      "date": "2026-05-26",
+      "day_of_week": "Tuesday",
+      "opponent": "Atlanta Braves",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 33,
+          "max_price": 7207,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FN",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 7207,
+          "total_listings": 3146,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681668",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -1,
+        "change_pct_7d": -2.9,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824756",
+      "date": "2026-05-27",
+      "day_of_week": "Wednesday",
+      "opponent": "Atlanta Braves",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 36,
+          "max_price": 1397,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F0",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 36,
+          "max_price": 1397,
+          "total_listings": 3165,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681669",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 36,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "stable",
+        "change_7d": 0,
+        "change_pct_7d": 0,
+        "trend": "stable"
+      }
+    },
+    {
+      "game_id": "mlb-824757",
+      "date": "2026-05-28",
+      "day_of_week": "Thursday",
+      "opponent": "Atlanta Braves",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 49,
+          "max_price": 1668,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FP",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 49,
+          "max_price": 1668,
+          "total_listings": 3110,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681670",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 49,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": "falling",
+        "change_7d": -14,
+        "change_pct_7d": -22.2,
+        "trend": "act_now"
+      }
+    },
+    {
+      "game_id": "mlb-824754",
+      "date": "2026-06-02",
+      "day_of_week": "Tuesday",
+      "opponent": "Baltimore Orioles",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 33,
+          "max_price": 6326,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FJ",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 33,
+          "max_price": 6326,
+          "total_listings": 3214,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681671",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 33,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824755",
+      "date": "2026-06-03",
+      "day_of_week": "Wednesday",
+      "opponent": "Baltimore Orioles",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 37,
+          "max_price": 6780,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FE",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 37,
+          "max_price": 6780,
+          "total_listings": 3130,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681672",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 37,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    },
+    {
+      "game_id": "mlb-824753",
+      "date": "2026-06-04",
+      "day_of_week": "Thursday",
+      "opponent": "Baltimore Orioles",
+      "is_preferred_day": false,
+      "tickets": {
+        "ticketmaster": {
+          "min_price": 55,
+          "max_price": 6857,
+          "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FI",
+          "source": "primary"
+        },
+        "seatgeek": null,
+        "ticketmaster_scraped": {
+          "min_price": 55,
+          "max_price": 6857,
+          "total_listings": 2941,
+          "inventory_types": [
+            "resale"
+          ],
+          "source": "ticketmaster_scraped"
+        }
+      },
+      "primary_market": {
+        "primary_url": "https://mlb.tickets.com/?agency=MLB_MPV&orgid=23&pid=9681673",
+        "sold_out": false
+      },
+      "best_available": {
+        "price": 55,
+        "source": "ticketmaster",
+        "is_primary": true
+      },
+      "price_alert": true,
+      "weather": {
+        "forecast_available": false
+      },
+      "velocity": {
+        "direction": null,
+        "change_7d": null,
+        "change_pct_7d": null,
+        "trend": "insufficient_data"
+      }
+    }
+  ]
+}
