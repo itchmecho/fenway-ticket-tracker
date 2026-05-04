@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T16:00:01.722Z",
+  "generated_at": "2026-05-04T22:00:01.763Z",
   "games": [
     {
       "game_id": "mlb-824767",
@@ -9,21 +9,34 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 21,
-          "max_price": 3341,
+          "min_price": 22,
+          "max_price": 101249,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F8",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 21,
-          "max_price": 3341,
-          "total_listings": 2650,
+          "min_price": 22,
+          "max_price": 101249,
+          "total_listings": 2676,
           "inventory_types": [
             "resale"
           ],
           "source": "ticketmaster_scraped",
           "sections": [
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "C",
+                "E",
+                "G",
+                "M",
+                "c",
+                "f"
+              ]
+            },
             {
               "name": "F34",
               "group": "Field Box",
@@ -46,18 +59,6 @@
                 "C",
                 "E",
                 "a"
-              ]
-            },
-            {
-              "name": "F51",
-              "group": "Field Box",
-              "listings": 17,
-              "rows": [
-                "C",
-                "E",
-                "G",
-                "M",
-                "f"
               ]
             },
             {
@@ -85,15 +86,27 @@
               ]
             },
             {
-              "name": "F14",
+              "name": "PB01",
+              "group": "Pavilion Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "e"
+              ]
+            },
+            {
+              "name": "F59",
               "group": "Field Box",
               "listings": 16,
               "rows": [
-                "B",
-                "D",
-                "L",
-                "M",
-                "k"
+                "F",
+                "J",
+                "K",
+                "c",
+                "l"
               ]
             },
             {
@@ -113,20 +126,9 @@
               "listings": 14,
               "rows": [
                 "H",
+                "J",
                 "K",
-                "M",
                 "e"
-              ]
-            },
-            {
-              "name": "F16",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "B",
-                "H",
-                "m"
               ]
             },
             {
@@ -141,26 +143,14 @@
               ]
             },
             {
-              "name": "F12",
+              "name": "F14",
               "group": "Field Box",
               "listings": 14,
               "rows": [
-                "A",
-                "C",
-                "F",
-                "M",
-                "f"
-              ]
-            },
-            {
-              "name": "PB01",
-              "group": "Pavilion Box",
-              "listings": 14,
-              "rows": [
-                "A",
                 "B",
-                "C",
-                "D"
+                "L",
+                "M",
+                "k"
               ]
             },
             {
@@ -175,14 +165,25 @@
               ]
             },
             {
-              "name": "F59",
+              "name": "F16",
               "group": "Field Box",
               "listings": 12,
               "rows": [
-                "F",
-                "J",
-                "K",
+                "A",
+                "B",
+                "H",
                 "c"
+              ]
+            },
+            {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "A",
+                "C",
+                "F",
+                "M"
               ]
             },
             {
@@ -194,6 +195,18 @@
                 "H",
                 "J",
                 "M"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "A",
+                "E",
+                "H",
+                "M",
+                "d"
               ]
             },
             {
@@ -229,13 +242,26 @@
               ]
             },
             {
-              "name": "F54",
+              "name": "F9",
               "group": "Field Box",
-              "listings": 10,
+              "listings": 11,
               "rows": [
-                "E",
+                "1",
+                "a",
+                "b",
                 "h",
                 "l"
+              ]
+            },
+            {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 11,
+              "rows": [
+                "1",
+                "2",
+                "3",
+                "5"
               ]
             },
             {
@@ -260,6 +286,16 @@
               ]
             },
             {
+              "name": "F19",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "G",
+                "H",
+                "j"
+              ]
+            },
+            {
               "name": "F13",
               "group": "Field Box",
               "listings": 10,
@@ -280,17 +316,6 @@
               ]
             },
             {
-              "name": "PB08",
-              "group": "Pavilion Box",
-              "listings": 10,
-              "rows": [
-                "B",
-                "D",
-                "a",
-                "e"
-              ]
-            },
-            {
               "name": "PB05",
               "group": "Pavilion Box",
               "listings": 10,
@@ -302,35 +327,14 @@
               ]
             },
             {
-              "name": "PB07",
+              "name": "PB09",
               "group": "Pavilion Box",
               "listings": 10,
               "rows": [
-                "D",
-                "E",
-                "b",
-                "d"
-              ]
-            },
-            {
-              "name": "F37",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
                 "A",
-                "E",
-                "H",
-                "M"
-              ]
-            },
-            {
-              "name": "F10",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "a",
-                "e",
-                "l"
+                "B",
+                "D",
+                "a"
               ]
             },
             {
@@ -354,15 +358,6 @@
               ]
             },
             {
-              "name": "F19",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "G",
-                "H"
-              ]
-            },
-            {
               "name": "F61",
               "group": "Field Box",
               "listings": 8,
@@ -382,13 +377,13 @@
               ]
             },
             {
-              "name": "F75",
-              "group": "Field Box",
+              "name": "PB08",
+              "group": "Pavilion Box",
               "listings": 8,
               "rows": [
-                "A",
-                "G",
-                "L"
+                "B",
+                "D",
+                "a"
               ]
             },
             {
@@ -401,23 +396,32 @@
               ]
             },
             {
-              "name": "F48",
-              "group": "Field Box",
+              "name": "PB07",
+              "group": "Pavilion Box",
               "listings": 8,
               "rows": [
-                "J",
-                "K"
+                "D",
+                "E",
+                "b"
               ]
             },
             {
-              "name": "AP11",
-              "group": "Aura Pavilion",
+              "name": "F75",
+              "group": "Field Box",
               "listings": 8,
               "rows": [
-                "1",
-                "2",
-                "3",
-                "5"
+                "A",
+                "L",
+                "k"
+              ]
+            },
+            {
+              "name": "F58",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "b",
+                "d"
               ]
             },
             {
@@ -431,16 +435,6 @@
               ]
             },
             {
-              "name": "PB09",
-              "group": "Pavilion Box",
-              "listings": 7,
-              "rows": [
-                "A",
-                "B",
-                "D"
-              ]
-            },
-            {
               "name": "PB12",
               "group": "Pavilion Box",
               "listings": 7,
@@ -450,21 +444,22 @@
               ]
             },
             {
-              "name": "F53",
+              "name": "F71",
               "group": "Field Box",
-              "listings": 6,
+              "listings": 7,
               "rows": [
-                "D",
-                "L"
+                "K",
+                "L",
+                "f"
               ]
             },
             {
-              "name": "F40",
+              "name": "F54",
               "group": "Field Box",
               "listings": 6,
               "rows": [
-                "G",
-                "a"
+                "E",
+                "l"
               ]
             },
             {
@@ -504,31 +499,12 @@
               ]
             },
             {
-              "name": "F38",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "A",
-                "C",
-                "E"
-              ]
-            },
-            {
               "name": "F23",
               "group": "Field Box",
               "listings": 6,
               "rows": [
                 "G",
                 "h"
-              ]
-            },
-            {
-              "name": "F41",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "G",
-                "m"
               ]
             },
             {
@@ -551,6 +527,50 @@
               ]
             },
             {
+              "name": "F10",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "a",
+                "e"
+              ]
+            },
+            {
+              "name": "AP07",
+              "group": "Aura Pavilion",
+              "listings": 6,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "F22",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "C",
+                "l"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 6,
+              "rows": [
+                "d",
+                "e"
+              ]
+            },
+            {
+              "name": "F53",
+              "group": "Field Box",
+              "listings": 5,
+              "rows": [
+                "D",
+                "L"
+              ]
+            },
+            {
               "name": "F43",
               "group": "Field Box",
               "listings": 5,
@@ -560,21 +580,21 @@
               ]
             },
             {
-              "name": "F9",
+              "name": "F47",
               "group": "Field Box",
               "listings": 5,
               "rows": [
-                "b",
-                "h"
+                "C",
+                "b"
               ]
             },
             {
-              "name": "F35",
+              "name": "F38",
               "group": "Field Box",
               "listings": 4,
               "rows": [
-                "M",
-                "c"
+                "A",
+                "C"
               ]
             },
             {
@@ -602,20 +622,11 @@
               ]
             },
             {
-              "name": "F71",
+              "name": "F41",
               "group": "Field Box",
               "listings": 4,
               "rows": [
-                "K",
-                "L"
-              ]
-            },
-            {
-              "name": "FBC71",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "AAA"
+                "G"
               ]
             },
             {
@@ -627,15 +638,6 @@
               ]
             },
             {
-              "name": "AP01",
-              "group": "Aura Pavilion",
-              "listings": 4,
-              "rows": [
-                "2",
-                "3"
-              ]
-            },
-            {
               "name": "F57",
               "group": "Field Box",
               "listings": 4,
@@ -644,11 +646,43 @@
               ]
             },
             {
-              "name": "PB04",
-              "group": "Pavilion Box",
+              "name": "F48",
+              "group": "Field Box",
               "listings": 4,
               "rows": [
-                "d"
+                "H"
+              ]
+            },
+            {
+              "name": "AP05",
+              "group": "Aura Pavilion",
+              "listings": 3,
+              "rows": [
+                "2"
+              ]
+            },
+            {
+              "name": "AP04",
+              "group": "Aura Pavilion",
+              "listings": 3,
+              "rows": [
+                "1"
+              ]
+            },
+            {
+              "name": "F40",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "G"
+              ]
+            },
+            {
+              "name": "F35",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "M"
               ]
             },
             {
@@ -657,14 +691,6 @@
               "listings": 2,
               "rows": [
                 "M"
-              ]
-            },
-            {
-              "name": "F74",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "J"
               ]
             },
             {
@@ -700,14 +726,6 @@
               ]
             },
             {
-              "name": "F47",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "C"
-              ]
-            },
-            {
               "name": "F32",
               "group": "Field Box",
               "listings": 2,
@@ -732,6 +750,14 @@
               ]
             },
             {
+              "name": "AP01",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "2"
+              ]
+            },
+            {
               "name": "F26",
               "group": "Field Box",
               "listings": 2,
@@ -748,27 +774,11 @@
               ]
             },
             {
-              "name": "F30",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "d"
-              ]
-            },
-            {
               "name": "AP10",
               "group": "Aura Pavilion",
               "listings": 2,
               "rows": [
                 "1"
-              ]
-            },
-            {
-              "name": "AP09",
-              "group": "Aura Pavilion",
-              "listings": 2,
-              "rows": [
-                "2"
               ]
             },
             {
@@ -780,23 +790,31 @@
               ]
             },
             {
-              "name": "AP07",
-              "group": "Aura Pavilion",
-              "listings": 2,
-              "rows": [
-                "1"
-              ]
-            },
-            {
-              "name": "F22",
+              "name": "F56",
               "group": "Field Box",
               "listings": 2,
               "rows": [
-                "C"
+                "a"
+              ]
+            },
+            {
+              "name": "F74",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "K"
               ]
             },
             {
               "name": "AP13",
+              "group": "Aura Pavilion",
+              "listings": 1,
+              "rows": [
+                "5"
+              ]
+            },
+            {
+              "name": "AP08",
               "group": "Aura Pavilion",
               "listings": 1,
               "rows": [
@@ -811,7 +829,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 21,
+        "price": 22,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -821,8 +839,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -7,
-        "change_pct_7d": -25,
+        "change_7d": -6,
+        "change_pct_7d": -21.4,
         "trend": "act_now"
       }
     },
@@ -843,7 +861,7 @@
         "ticketmaster_scraped": {
           "min_price": 36,
           "max_price": 4180,
-          "total_listings": 3444,
+          "total_listings": 3485,
           "inventory_types": [
             "resale"
           ],
@@ -908,31 +926,6 @@
               ]
             },
             {
-              "name": "F36",
-              "group": "Field Box",
-              "listings": 20,
-              "rows": [
-                "A",
-                "B",
-                "E",
-                "F",
-                "J",
-                "M",
-                "d"
-              ]
-            },
-            {
-              "name": "PB04",
-              "group": "Pavilion Box",
-              "listings": 20,
-              "rows": [
-                "B",
-                "C",
-                "d",
-                "e"
-              ]
-            },
-            {
               "name": "F50",
               "group": "Field Box",
               "listings": 19,
@@ -940,33 +933,22 @@
                 "E",
                 "F",
                 "G",
-                "K",
+                "L",
                 "f",
                 "m"
               ]
             },
             {
-              "name": "F65",
-              "group": "Field Box",
-              "listings": 18,
-              "rows": [
-                "D",
-                "E",
-                "F",
-                "l",
-                "m"
-              ]
-            },
-            {
-              "name": "F14",
+              "name": "F36",
               "group": "Field Box",
               "listings": 18,
               "rows": [
                 "B",
-                "L",
+                "E",
+                "F",
+                "J",
                 "M",
-                "a",
-                "e"
+                "d"
               ]
             },
             {
@@ -990,6 +972,16 @@
                 "M",
                 "d",
                 "g"
+              ]
+            },
+            {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "A",
+                "D",
+                "b"
               ]
             },
             {
@@ -1017,6 +1009,41 @@
               ]
             },
             {
+              "name": "F52",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "G",
+                "L",
+                "d",
+                "k"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 16,
+              "rows": [
+                "B",
+                "C",
+                "e"
+              ]
+            },
+            {
+              "name": "PB05",
+              "group": "Pavilion Box",
+              "listings": 15,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "a",
+                "c",
+                "e"
+              ]
+            },
+            {
               "name": "F70",
               "group": "Field Box",
               "listings": 15,
@@ -1039,6 +1066,18 @@
               ]
             },
             {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "F",
+                "M",
+                "e",
+                "f",
+                "l"
+              ]
+            },
+            {
               "name": "F42",
               "group": "Field Box",
               "listings": 14,
@@ -1050,14 +1089,14 @@
               ]
             },
             {
-              "name": "F52",
+              "name": "F20",
               "group": "Field Box",
               "listings": 14,
               "rows": [
-                "A",
-                "G",
-                "L",
-                "d"
+                "E",
+                "H",
+                "J",
+                "M"
               ]
             },
             {
@@ -1072,6 +1111,17 @@
                 "f",
                 "h",
                 "j"
+              ]
+            },
+            {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "D",
+                "E",
+                "F",
+                "m"
               ]
             },
             {
@@ -1101,6 +1151,29 @@
               ]
             },
             {
+              "name": "F14",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "B",
+                "L",
+                "a",
+                "e"
+              ]
+            },
+            {
+              "name": "F58",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "C",
+                "a",
+                "f",
+                "h",
+                "k"
+              ]
+            },
+            {
               "name": "PB10",
               "group": "Pavilion Box",
               "listings": 14,
@@ -1108,6 +1181,18 @@
                 "B",
                 "C",
                 "D"
+              ]
+            },
+            {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 14,
+              "rows": [
+                "B",
+                "D",
+                "E",
+                "c",
+                "e"
               ]
             },
             {
@@ -1122,18 +1207,6 @@
               ]
             },
             {
-              "name": "F59",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "J",
-                "a",
-                "c",
-                "e",
-                "h"
-              ]
-            },
-            {
               "name": "F24",
               "group": "Field Box",
               "listings": 13,
@@ -1142,38 +1215,6 @@
                 "d",
                 "h",
                 "j"
-              ]
-            },
-            {
-              "name": "PB05",
-              "group": "Pavilion Box",
-              "listings": 13,
-              "rows": [
-                "A",
-                "B",
-                "C",
-                "c",
-                "e"
-              ]
-            },
-            {
-              "name": "PB09",
-              "group": "Pavilion Box",
-              "listings": 13,
-              "rows": [
-                "A",
-                "D"
-              ]
-            },
-            {
-              "name": "F12",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "F",
-                "M",
-                "e",
-                "f"
               ]
             },
             {
@@ -1210,14 +1251,14 @@
               ]
             },
             {
-              "name": "F58",
+              "name": "F13",
               "group": "Field Box",
               "listings": 12,
               "rows": [
-                "C",
-                "a",
-                "f",
-                "h"
+                "A",
+                "L",
+                "d",
+                "k"
               ]
             },
             {
@@ -1228,6 +1269,17 @@
                 "A",
                 "B",
                 "C"
+              ]
+            },
+            {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "M",
+                "a",
+                "h",
+                "m"
               ]
             },
             {
@@ -1253,23 +1305,23 @@
               ]
             },
             {
-              "name": "F20",
+              "name": "F67",
               "group": "Field Box",
               "listings": 10,
               "rows": [
-                "E",
-                "H",
-                "M"
+                "C",
+                "M",
+                "d"
               ]
             },
             {
-              "name": "F13",
+              "name": "F22",
               "group": "Field Box",
               "listings": 10,
               "rows": [
-                "A",
-                "L",
-                "d"
+                "F",
+                "l",
+                "m"
               ]
             },
             {
@@ -1284,24 +1336,15 @@
               ]
             },
             {
-              "name": "PB07",
+              "name": "PB06",
               "group": "Pavilion Box",
               "listings": 10,
               "rows": [
-                "B",
+                "C",
                 "D",
-                "E",
-                "b"
-              ]
-            },
-            {
-              "name": "F46",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "M",
                 "a",
-                "h"
+                "c",
+                "e"
               ]
             },
             {
@@ -1321,7 +1364,7 @@
               "listings": 10,
               "rows": [
                 "H",
-                "K",
+                "J",
                 "e"
               ]
             },
@@ -1335,6 +1378,27 @@
               ]
             },
             {
+              "name": "F10",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "1",
+                "c",
+                "e",
+                "k"
+              ]
+            },
+            {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 9,
+              "rows": [
+                "J",
+                "L",
+                "a"
+              ]
+            },
+            {
               "name": "F62",
               "group": "Field Box",
               "listings": 9,
@@ -1342,6 +1406,16 @@
                 "H",
                 "c",
                 "d"
+              ]
+            },
+            {
+              "name": "F40",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "G",
+                "a",
+                "c"
               ]
             },
             {
@@ -1354,13 +1428,13 @@
               ]
             },
             {
-              "name": "F57",
+              "name": "F11",
               "group": "Field Box",
               "listings": 8,
               "rows": [
-                "J",
-                "c",
-                "g"
+                "B",
+                "e",
+                "j"
               ]
             },
             {
@@ -1371,16 +1445,6 @@
                 "A",
                 "B",
                 "H"
-              ]
-            },
-            {
-              "name": "F18",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "A",
-                "B",
-                "D"
               ]
             },
             {
@@ -1400,17 +1464,6 @@
               "rows": [
                 "K",
                 "l"
-              ]
-            },
-            {
-              "name": "PB06",
-              "group": "Pavilion Box",
-              "listings": 8,
-              "rows": [
-                "C",
-                "D",
-                "c",
-                "e"
               ]
             },
             {
@@ -1443,6 +1496,16 @@
               ]
             },
             {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "c",
+                "h"
+              ]
+            },
+            {
               "name": "AP05",
               "group": "Aura Pavilion",
               "listings": 8,
@@ -1452,58 +1515,12 @@
               ]
             },
             {
-              "name": "F10",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "1",
-                "c",
-                "k"
-              ]
-            },
-            {
-              "name": "F43",
-              "group": "Field Box",
-              "listings": 7,
-              "rows": [
-                "J",
-                "L"
-              ]
-            },
-            {
               "name": "F32",
               "group": "Field Box",
               "listings": 6,
               "rows": [
                 "D",
                 "E"
-              ]
-            },
-            {
-              "name": "F11",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "B",
-                "j"
-              ]
-            },
-            {
-              "name": "F67",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "C",
-                "M"
-              ]
-            },
-            {
-              "name": "F22",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "F",
-                "m"
               ]
             },
             {
@@ -1539,7 +1556,7 @@
               "listings": 6,
               "rows": [
                 "A",
-                "m"
+                "k"
               ]
             },
             {
@@ -1587,20 +1604,20 @@
               ]
             },
             {
-              "name": "F40",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "G",
-                "c"
-              ]
-            },
-            {
               "name": "F68",
               "group": "Field Box",
               "listings": 4,
               "rows": [
                 "L"
+              ]
+            },
+            {
+              "name": "F57",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "J",
+                "c"
               ]
             },
             {
@@ -1620,6 +1637,15 @@
               ]
             },
             {
+              "name": "F18",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "A",
+                "D"
+              ]
+            },
+            {
               "name": "F28",
               "group": "Field Box",
               "listings": 4,
@@ -1633,7 +1659,7 @@
               "listings": 4,
               "rows": [
                 "H",
-                "l"
+                "j"
               ]
             },
             {
@@ -1653,12 +1679,12 @@
               ]
             },
             {
-              "name": "AP01",
-              "group": "Aura Pavilion",
+              "name": "F30",
+              "group": "Field Box",
               "listings": 4,
               "rows": [
-                "2",
-                "3"
+                "f",
+                "m"
               ]
             },
             {
@@ -1728,12 +1754,29 @@
               ]
             },
             {
+              "name": "FBC71",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "AAA"
+              ]
+            },
+            {
               "name": "F9",
               "group": "Field Box",
               "listings": 3,
               "rows": [
                 "a",
                 "b"
+              ]
+            },
+            {
+              "name": "DTC6",
+              "group": "Dugout Club",
+              "listings": 3,
+              "rows": [
+                "1",
+                "4"
               ]
             },
             {
@@ -1753,14 +1796,6 @@
               ]
             },
             {
-              "name": "F30",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "f"
-              ]
-            },
-            {
               "name": "AP07",
               "group": "Aura Pavilion",
               "listings": 2,
@@ -1769,27 +1804,11 @@
               ]
             },
             {
-              "name": "F44",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "c"
-              ]
-            },
-            {
               "name": "DTC2",
               "group": "Dugout Club",
               "listings": 2,
               "rows": [
                 "1"
-              ]
-            },
-            {
-              "name": "F35",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "c"
               ]
             },
             {
@@ -1825,11 +1844,27 @@
               ]
             },
             {
-              "name": "DTC6",
-              "group": "Dugout Club",
+              "name": "AP01",
+              "group": "Aura Pavilion",
               "listings": 2,
               "rows": [
-                "1"
+                "2"
+              ]
+            },
+            {
+              "name": "AP09",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "5"
+              ]
+            },
+            {
+              "name": "F44",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "c"
               ]
             }
           ]
@@ -1872,7 +1907,7 @@
         "ticketmaster_scraped": {
           "min_price": 49,
           "max_price": 4422,
-          "total_listings": 2890,
+          "total_listings": 2829,
           "inventory_types": [
             "resale"
           ],
@@ -1892,19 +1927,16 @@
               ]
             },
             {
-              "name": "F38",
-              "group": "Field Box",
-              "listings": 22,
+              "name": "PB01",
+              "group": "Pavilion Box",
+              "listings": 20,
               "rows": [
                 "A",
+                "B",
+                "D",
                 "E",
-                "F",
-                "H",
-                "J",
-                "aaa",
-                "b",
-                "e",
-                "f"
+                "d",
+                "e"
               ]
             },
             {
@@ -1920,18 +1952,6 @@
               ]
             },
             {
-              "name": "PB01",
-              "group": "Pavilion Box",
-              "listings": 18,
-              "rows": [
-                "A",
-                "B",
-                "D",
-                "E",
-                "d"
-              ]
-            },
-            {
               "name": "F34",
               "group": "Field Box",
               "listings": 16,
@@ -1944,16 +1964,29 @@
               ]
             },
             {
-              "name": "F12",
+              "name": "F21",
               "group": "Field Box",
               "listings": 16,
               "rows": [
+                "G",
+                "J",
+                "L",
+                "M",
+                "e"
+              ]
+            },
+            {
+              "name": "F38",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "E",
                 "F",
                 "H",
-                "K",
-                "M",
-                "f",
-                "l"
+                "J",
+                "e",
+                "f"
               ]
             },
             {
@@ -1989,6 +2022,18 @@
                 "K",
                 "d",
                 "e"
+              ]
+            },
+            {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 15,
+              "rows": [
+                "A",
+                "C",
+                "D",
+                "a",
+                "b"
               ]
             },
             {
@@ -2037,17 +2082,6 @@
               ]
             },
             {
-              "name": "PB09",
-              "group": "Pavilion Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "C",
-                "D",
-                "b"
-              ]
-            },
-            {
               "name": "PB08",
               "group": "Pavilion Box",
               "listings": 14,
@@ -2060,48 +2094,14 @@
               ]
             },
             {
-              "name": "F48",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "H",
-                "J",
-                "K"
-              ]
-            },
-            {
               "name": "F59",
               "group": "Field Box",
               "listings": 14,
               "rows": [
                 "F",
                 "K",
-                "a",
-                "e"
-              ]
-            },
-            {
-              "name": "F21",
-              "group": "Field Box",
-              "listings": 13,
-              "rows": [
-                "G",
-                "J",
-                "L",
-                "M"
-              ]
-            },
-            {
-              "name": "F47",
-              "group": "Field Box",
-              "listings": 13,
-              "rows": [
-                "C",
-                "G",
-                "K",
-                "a",
-                "b"
+                "e",
+                "l"
               ]
             },
             {
@@ -2113,18 +2113,6 @@
                 "B",
                 "J",
                 "d"
-              ]
-            },
-            {
-              "name": "F39",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "A",
-                "C",
-                "D",
-                "K",
-                "c"
               ]
             },
             {
@@ -2171,6 +2159,28 @@
               ]
             },
             {
+              "name": "F67",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "M",
+                "d",
+                "h"
+              ]
+            },
+            {
+              "name": "F47",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "C",
+                "G",
+                "K",
+                "a",
+                "b"
+              ]
+            },
+            {
               "name": "F62",
               "group": "Field Box",
               "listings": 12,
@@ -2182,14 +2192,13 @@
               ]
             },
             {
-              "name": "F41",
+              "name": "F48",
               "group": "Field Box",
               "listings": 12,
               "rows": [
+                "H",
                 "J",
-                "e",
-                "l",
-                "m"
+                "K"
               ]
             },
             {
@@ -2212,17 +2221,6 @@
               ]
             },
             {
-              "name": "F65",
-              "group": "Field Box",
-              "listings": 11,
-              "rows": [
-                "E",
-                "K",
-                "l",
-                "m"
-              ]
-            },
-            {
               "name": "F19",
               "group": "Field Box",
               "listings": 10,
@@ -2230,6 +2228,28 @@
                 "B",
                 "G",
                 "H"
+              ]
+            },
+            {
+              "name": "F12",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "H",
+                "M",
+                "l"
+              ]
+            },
+            {
+              "name": "F39",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "C",
+                "D",
+                "K"
               ]
             },
             {
@@ -2274,17 +2294,6 @@
               ]
             },
             {
-              "name": "F37",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "A",
-                "E",
-                "H",
-                "K"
-              ]
-            },
-            {
               "name": "F28",
               "group": "Field Box",
               "listings": 10,
@@ -2295,6 +2304,15 @@
               ]
             },
             {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "d"
+              ]
+            },
+            {
               "name": "F66",
               "group": "Field Box",
               "listings": 10,
@@ -2302,6 +2320,37 @@
                 "C",
                 "F",
                 "H"
+              ]
+            },
+            {
+              "name": "F41",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "J",
+                "e",
+                "l"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "E",
+                "K",
+                "d"
+              ]
+            },
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 9,
+              "rows": [
+                "E",
+                "M",
+                "c"
               ]
             },
             {
@@ -2323,6 +2372,15 @@
               ]
             },
             {
+              "name": "F61",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "G",
+                "J"
+              ]
+            },
+            {
               "name": "F40",
               "group": "Field Box",
               "listings": 8,
@@ -2330,15 +2388,6 @@
                 "B",
                 "G",
                 "a"
-              ]
-            },
-            {
-              "name": "F67",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "M",
-                "h"
               ]
             },
             {
@@ -2372,21 +2421,12 @@
               ]
             },
             {
-              "name": "F51",
+              "name": "F64",
               "group": "Field Box",
-              "listings": 7,
+              "listings": 8,
               "rows": [
-                "E",
-                "M"
-              ]
-            },
-            {
-              "name": "F32",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "E",
-                "d"
+                "J",
+                "L"
               ]
             },
             {
@@ -2415,24 +2455,6 @@
               "rows": [
                 "B",
                 "D"
-              ]
-            },
-            {
-              "name": "F31",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "H",
-                "j",
-                "l"
-              ]
-            },
-            {
-              "name": "PB04",
-              "group": "Pavilion Box",
-              "listings": 6,
-              "rows": [
-                "C"
               ]
             },
             {
@@ -2483,6 +2505,15 @@
               ]
             },
             {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 5,
+              "rows": [
+                "E",
+                "K"
+              ]
+            },
+            {
               "name": "F46",
               "group": "Field Box",
               "listings": 5,
@@ -2492,20 +2523,29 @@
               ]
             },
             {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 5,
+              "rows": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "name": "F32",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "E"
+              ]
+            },
+            {
               "name": "F74",
               "group": "Field Box",
               "listings": 4,
               "rows": [
                 "E",
                 "K"
-              ]
-            },
-            {
-              "name": "F61",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "J"
               ]
             },
             {
@@ -2543,6 +2583,15 @@
               ]
             },
             {
+              "name": "F31",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "H",
+                "l"
+              ]
+            },
+            {
               "name": "PC06",
               "group": "Pavilion Club",
               "listings": 4,
@@ -2557,14 +2606,6 @@
               "rows": [
                 "D",
                 "l"
-              ]
-            },
-            {
-              "name": "F64",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "J"
               ]
             },
             {
@@ -2635,6 +2676,14 @@
               ]
             },
             {
+              "name": "FBC71",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "AAA"
+              ]
+            },
+            {
               "name": "F45",
               "group": "Field Box",
               "listings": 3,
@@ -2664,22 +2713,6 @@
               "listings": 2,
               "rows": [
                 "1"
-              ]
-            },
-            {
-              "name": "AC04",
-              "group": "Aura Club",
-              "listings": 2,
-              "rows": [
-                "2"
-              ]
-            },
-            {
-              "name": "AC02",
-              "group": "Aura Club",
-              "listings": 2,
-              "rows": [
-                "3"
               ]
             },
             {
@@ -2747,16 +2780,24 @@
               ]
             },
             {
-              "name": "F76",
-              "group": "Field Box",
+              "name": "DTC5",
+              "group": "Dugout Club",
               "listings": 2,
               "rows": [
-                "g"
+                "7"
               ]
             },
             {
-              "name": "AP11",
-              "group": "Aura Pavilion",
+              "name": "FCLUB 72",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "AC02",
+              "group": "Aura Club",
               "listings": 2,
               "rows": [
                 "3"
@@ -2793,16 +2834,16 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": 33,
+          "min_price": 35,
           "max_price": 4962,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fp",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 33,
+          "min_price": 35,
           "max_price": 4962,
-          "total_listings": 2927,
+          "total_listings": 2986,
           "inventory_types": [
             "resale"
           ],
@@ -2875,6 +2916,19 @@
               ]
             },
             {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 18,
+              "rows": [
+                "B",
+                "C",
+                "D",
+                "a",
+                "b",
+                "d"
+              ]
+            },
+            {
               "name": "F50",
               "group": "Field Box",
               "listings": 17,
@@ -2888,27 +2942,28 @@
               ]
             },
             {
-              "name": "PB10",
-              "group": "Pavilion Box",
-              "listings": 17,
-              "rows": [
-                "B",
-                "C",
-                "D",
-                "a",
-                "d"
-              ]
-            },
-            {
               "name": "PB05",
               "group": "Pavilion Box",
-              "listings": 16,
+              "listings": 17,
               "rows": [
                 "A",
                 "B",
                 "C",
                 "a",
-                "c"
+                "c",
+                "e"
+              ]
+            },
+            {
+              "name": "F13",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "L",
+                "c",
+                "e",
+                "g",
+                "j"
               ]
             },
             {
@@ -2958,18 +3013,6 @@
               ]
             },
             {
-              "name": "F13",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "L",
-                "c",
-                "e",
-                "g",
-                "j"
-              ]
-            },
-            {
               "name": "F17",
               "group": "Field Box",
               "listings": 14,
@@ -2993,15 +3036,39 @@
               ]
             },
             {
-              "name": "F51",
+              "name": "F36",
               "group": "Field Box",
-              "listings": 13,
+              "listings": 12,
               "rows": [
-                "C",
+                "A",
                 "E",
-                "a",
+                "J",
+                "d",
+                "k"
+              ]
+            },
+            {
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "G",
+                "M",
+                "d",
+                "h",
+                "m"
+              ]
+            },
+            {
+              "name": "F56",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "G",
                 "c",
-                "d"
+                "f",
+                "j",
+                "k"
               ]
             },
             {
@@ -3086,6 +3153,16 @@
               ]
             },
             {
+              "name": "PB09",
+              "group": "Pavilion Box",
+              "listings": 11,
+              "rows": [
+                "A",
+                "C",
+                "b"
+              ]
+            },
+            {
               "name": "F9",
               "group": "Field Box",
               "listings": 11,
@@ -3094,17 +3171,6 @@
                 "b",
                 "e",
                 "g"
-              ]
-            },
-            {
-              "name": "F36",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "A",
-                "E",
-                "J",
-                "k"
               ]
             },
             {
@@ -3120,12 +3186,33 @@
               ]
             },
             {
+              "name": "F67",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "M",
+                "d"
+              ]
+            },
+            {
               "name": "F19",
               "group": "Field Box",
               "listings": 10,
               "rows": [
                 "G",
                 "H",
+                "l"
+              ]
+            },
+            {
+              "name": "F54",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "E",
+                "F",
+                "e",
                 "l"
               ]
             },
@@ -3158,6 +3245,15 @@
                 "H",
                 "d",
                 "l"
+              ]
+            },
+            {
+              "name": "PB04",
+              "group": "Pavilion Box",
+              "listings": 10,
+              "rows": [
+                "C",
+                "d"
               ]
             },
             {
@@ -3201,37 +3297,6 @@
               ]
             },
             {
-              "name": "PB09",
-              "group": "Pavilion Box",
-              "listings": 9,
-              "rows": [
-                "A",
-                "C"
-              ]
-            },
-            {
-              "name": "F24",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "G",
-                "M",
-                "d",
-                "m"
-              ]
-            },
-            {
-              "name": "F56",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "G",
-                "c",
-                "f",
-                "k"
-              ]
-            },
-            {
               "name": "F16",
               "group": "Field Box",
               "listings": 8,
@@ -3251,22 +3316,34 @@
               ]
             },
             {
-              "name": "F54",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "E",
-                "F",
-                "l"
-              ]
-            },
-            {
               "name": "F52",
               "group": "Field Box",
               "listings": 8,
               "rows": [
                 "G",
                 "K",
+                "d"
+              ]
+            },
+            {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 8,
+              "rows": [
+                "D",
+                "E",
+                "b",
+                "e"
+              ]
+            },
+            {
+              "name": "F51",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "a",
+                "c",
                 "d"
               ]
             },
@@ -3309,6 +3386,35 @@
               ]
             },
             {
+              "name": "F76",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "K",
+                "g",
+                "l"
+              ]
+            },
+            {
+              "name": "F37",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "A",
+                "K",
+                "d"
+              ]
+            },
+            {
+              "name": "F40",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "G",
+                "a"
+              ]
+            },
+            {
               "name": "F53",
               "group": "Field Box",
               "listings": 6,
@@ -3324,15 +3430,6 @@
               "rows": [
                 "D",
                 "K"
-              ]
-            },
-            {
-              "name": "F67",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "C",
-                "M"
               ]
             },
             {
@@ -3355,13 +3452,12 @@
               ]
             },
             {
-              "name": "PB07",
-              "group": "Pavilion Box",
+              "name": "F41",
+              "group": "Field Box",
               "listings": 6,
               "rows": [
-                "D",
-                "E",
-                "b"
+                "G",
+                "l"
               ]
             },
             {
@@ -3380,23 +3476,6 @@
               "rows": [
                 "B",
                 "h"
-              ]
-            },
-            {
-              "name": "PB04",
-              "group": "Pavilion Box",
-              "listings": 6,
-              "rows": [
-                "C"
-              ]
-            },
-            {
-              "name": "F76",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "K",
-                "l"
               ]
             },
             {
@@ -3437,6 +3516,16 @@
               ]
             },
             {
+              "name": "F30",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "c",
+                "d",
+                "l"
+              ]
+            },
+            {
               "name": "F59",
               "group": "Field Box",
               "listings": 6,
@@ -3446,21 +3535,22 @@
               ]
             },
             {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "a",
+                "h",
+                "j"
+              ]
+            },
+            {
               "name": "AP11",
               "group": "Aura Pavilion",
               "listings": 6,
               "rows": [
                 "2",
                 "4"
-              ]
-            },
-            {
-              "name": "F45",
-              "group": "Field Box",
-              "listings": 5,
-              "rows": [
-                "c",
-                "d"
               ]
             },
             {
@@ -3531,14 +3621,6 @@
               ]
             },
             {
-              "name": "F41",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "G"
-              ]
-            },
-            {
               "name": "F62",
               "group": "Field Box",
               "listings": 4,
@@ -3553,31 +3635,6 @@
               "listings": 4,
               "rows": [
                 "A"
-              ]
-            },
-            {
-              "name": "F37",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "A"
-              ]
-            },
-            {
-              "name": "AP03",
-              "group": "Aura Pavilion",
-              "listings": 4,
-              "rows": [
-                "3"
-              ]
-            },
-            {
-              "name": "F30",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "c",
-                "l"
               ]
             },
             {
@@ -3596,15 +3653,6 @@
               "rows": [
                 "1",
                 "3"
-              ]
-            },
-            {
-              "name": "F43",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "a",
-                "h"
               ]
             },
             {
@@ -3640,19 +3688,19 @@
               ]
             },
             {
-              "name": "F71",
+              "name": "FBC71",
               "group": "Field Box",
-              "listings": 3,
+              "listings": 4,
               "rows": [
-                "h"
+                "AAA"
               ]
             },
             {
-              "name": "F40",
+              "name": "F79",
               "group": "Field Box",
-              "listings": 2,
+              "listings": 3,
               "rows": [
-                "G"
+                "a"
               ]
             },
             {
@@ -3680,11 +3728,11 @@
               ]
             },
             {
-              "name": "AP10",
-              "group": "Aura Pavilion",
+              "name": "F45",
+              "group": "Field Box",
               "listings": 2,
               "rows": [
-                "2"
+                "d"
               ]
             },
             {
@@ -3768,11 +3816,43 @@
               ]
             },
             {
-              "name": "AURA CLUB 3",
-              "group": "Aura Pavilion",
+              "name": "DTC1",
+              "group": "Dugout Club",
               "listings": 2,
               "rows": [
                 "1"
+              ]
+            },
+            {
+              "name": "AP03",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "3"
+              ]
+            },
+            {
+              "name": "FCLUB 56",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "aaa"
+              ]
+            },
+            {
+              "name": "F71",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "b"
+              ]
+            },
+            {
+              "name": "AP10",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "2"
               ]
             },
             {
@@ -3791,7 +3871,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 33,
+        "price": 35,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -3801,8 +3881,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -6,
-        "change_pct_7d": -15.4,
+        "change_7d": -4,
+        "change_pct_7d": -10.3,
         "trend": "act_now"
       }
     },
@@ -3814,16 +3894,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 33,
+          "min_price": 34,
           "max_price": 10102,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8F9",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 33,
+          "min_price": 34,
           "max_price": 10102,
-          "total_listings": 3669,
+          "total_listings": 3611,
           "inventory_types": [
             "resale"
           ],
@@ -4046,17 +4126,6 @@
               ]
             },
             {
-              "name": "F20",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "E",
-                "F",
-                "J",
-                "M"
-              ]
-            },
-            {
               "name": "PB06",
               "group": "Pavilion Box",
               "listings": 14,
@@ -4087,6 +4156,16 @@
                 "J",
                 "aaa",
                 "j"
+              ]
+            },
+            {
+              "name": "F20",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "E",
+                "F",
+                "J"
               ]
             },
             {
@@ -4389,22 +4468,21 @@
               ]
             },
             {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "F",
+                "l"
+              ]
+            },
+            {
               "name": "AP11",
               "group": "Aura Pavilion",
               "listings": 6,
               "rows": [
                 "2",
                 "3"
-              ]
-            },
-            {
-              "name": "F9",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "a",
-                "b",
-                "e"
               ]
             },
             {
@@ -4432,15 +4510,6 @@
               "rows": [
                 "4",
                 "5"
-              ]
-            },
-            {
-              "name": "F46",
-              "group": "Field Box",
-              "listings": 5,
-              "rows": [
-                "a",
-                "f"
               ]
             },
             {
@@ -4602,6 +4671,15 @@
               ]
             },
             {
+              "name": "F9",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "a",
+                "b"
+              ]
+            },
+            {
               "name": "FBOX 93",
               "group": "Field Box",
               "listings": 4,
@@ -4650,6 +4728,14 @@
               ]
             },
             {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "f"
+              ]
+            },
+            {
               "name": "F22",
               "group": "Field Box",
               "listings": 2,
@@ -4658,27 +4744,11 @@
               ]
             },
             {
-              "name": "F59",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "F"
-              ]
-            },
-            {
               "name": "AP10",
               "group": "Aura Pavilion",
               "listings": 2,
               "rows": [
                 "1"
-              ]
-            },
-            {
-              "name": "F49",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "f"
               ]
             },
             {
@@ -4760,6 +4830,14 @@
               "rows": [
                 "1"
               ]
+            },
+            {
+              "name": "F49",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "f"
+              ]
             }
           ]
         }
@@ -4769,7 +4847,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 33,
+        "price": 34,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -4778,10 +4856,10 @@
         "forecast_available": false
       },
       "velocity": {
-        "direction": "stable",
-        "change_7d": 0,
-        "change_pct_7d": 0,
-        "trend": "stable"
+        "direction": "rising",
+        "change_7d": 1,
+        "change_pct_7d": 3,
+        "trend": "rising"
       }
     },
     {
@@ -4792,16 +4870,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 31,
+          "min_price": 32,
           "max_price": 10102,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fb",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 31,
+          "min_price": 32,
           "max_price": 10102,
-          "total_listings": 3365,
+          "total_listings": 3443,
           "inventory_types": [
             "resale"
           ],
@@ -4810,13 +4888,14 @@
             {
               "name": "F39",
               "group": "Field Box",
-              "listings": 29,
+              "listings": 31,
               "rows": [
                 "A",
                 "C",
                 "D",
                 "J",
                 "L",
+                "c",
                 "d",
                 "f"
               ]
@@ -4846,6 +4925,22 @@
               ]
             },
             {
+              "name": "F50",
+              "group": "Field Box",
+              "listings": 23,
+              "rows": [
+                "B",
+                "E",
+                "F",
+                "G",
+                "K",
+                "L",
+                "c",
+                "f",
+                "m"
+              ]
+            },
+            {
               "name": "PB08",
               "group": "Pavilion Box",
               "listings": 23,
@@ -4855,21 +4950,6 @@
                 "a",
                 "c",
                 "e"
-              ]
-            },
-            {
-              "name": "F50",
-              "group": "Field Box",
-              "listings": 21,
-              "rows": [
-                "B",
-                "E",
-                "F",
-                "G",
-                "K",
-                "L",
-                "c",
-                "m"
               ]
             },
             {
@@ -4908,6 +4988,19 @@
                 "K",
                 "L",
                 "m"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "C",
+                "F",
+                "H",
+                "J",
+                "M",
+                "g"
               ]
             },
             {
@@ -4956,6 +5049,30 @@
               ]
             },
             {
+              "name": "PB03",
+              "group": "Pavilion Box",
+              "listings": 18,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "a",
+                "c"
+              ]
+            },
+            {
+              "name": "F25",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "F",
+                "H",
+                "K",
+                "d",
+                "l"
+              ]
+            },
+            {
               "name": "F14",
               "group": "Field Box",
               "listings": 17,
@@ -4968,6 +5085,18 @@
               ]
             },
             {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "B",
+                "D",
+                "E",
+                "b",
+                "e"
+              ]
+            },
+            {
               "name": "F48",
               "group": "Field Box",
               "listings": 16,
@@ -4976,18 +5105,6 @@
                 "J",
                 "K",
                 "m"
-              ]
-            },
-            {
-              "name": "F66",
-              "group": "Field Box",
-              "listings": 15,
-              "rows": [
-                "C",
-                "H",
-                "J",
-                "M",
-                "g"
               ]
             },
             {
@@ -5068,17 +5185,6 @@
               ]
             },
             {
-              "name": "PB03",
-              "group": "Pavilion Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "E",
-                "a",
-                "c"
-              ]
-            },
-            {
               "name": "F65",
               "group": "Field Box",
               "listings": 14,
@@ -5090,24 +5196,16 @@
               ]
             },
             {
-              "name": "F25",
+              "name": "F38",
               "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "F",
-                "H",
-                "K",
-                "d"
-              ]
-            },
-            {
-              "name": "PB07",
-              "group": "Pavilion Box",
               "listings": 13,
               "rows": [
-                "B",
-                "D",
-                "b"
+                "A",
+                "F",
+                "H",
+                "aaa",
+                "h",
+                "m"
               ]
             },
             {
@@ -5156,18 +5254,6 @@
               ]
             },
             {
-              "name": "F38",
-              "group": "Field Box",
-              "listings": 11,
-              "rows": [
-                "A",
-                "F",
-                "H",
-                "h",
-                "m"
-              ]
-            },
-            {
               "name": "F35",
               "group": "Field Box",
               "listings": 10,
@@ -5209,6 +5295,17 @@
               ]
             },
             {
+              "name": "F41",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "J",
+                "e",
+                "l",
+                "m"
+              ]
+            },
+            {
               "name": "F37",
               "group": "Field Box",
               "listings": 10,
@@ -5216,6 +5313,26 @@
                 "A",
                 "E",
                 "H"
+              ]
+            },
+            {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 10,
+              "rows": [
+                "2",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "name": "F59",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "a",
+                "h",
+                "l"
               ]
             },
             {
@@ -5300,13 +5417,14 @@
               ]
             },
             {
-              "name": "F41",
+              "name": "F58",
               "group": "Field Box",
               "listings": 8,
               "rows": [
-                "J",
-                "e",
-                "l"
+                "C",
+                "d",
+                "f",
+                "h"
               ]
             },
             {
@@ -5411,16 +5529,6 @@
               ]
             },
             {
-              "name": "F58",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "C",
-                "f",
-                "h"
-              ]
-            },
-            {
               "name": "DTC2",
               "group": "Dugout Club",
               "listings": 6,
@@ -5467,21 +5575,12 @@
               ]
             },
             {
-              "name": "AP11",
-              "group": "Aura Pavilion",
-              "listings": 6,
-              "rows": [
-                "3",
-                "5"
-              ]
-            },
-            {
-              "name": "F59",
+              "name": "F29",
               "group": "Field Box",
               "listings": 6,
               "rows": [
-                "a",
-                "h"
+                "f",
+                "g"
               ]
             },
             {
@@ -5702,14 +5801,6 @@
               ]
             },
             {
-              "name": "F29",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "f"
-              ]
-            },
-            {
               "name": "F82",
               "group": "Field Box",
               "listings": 2,
@@ -5741,7 +5832,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 31,
+        "price": 32,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -5751,8 +5842,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -2,
-        "change_pct_7d": -6.1,
+        "change_7d": -1,
+        "change_pct_7d": -3,
         "trend": "act_now"
       }
     },
@@ -5795,16 +5886,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 46,
+          "min_price": 45,
           "max_price": 1779,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FO",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 46,
+          "min_price": 45,
           "max_price": 1779,
-          "total_listings": 3386,
+          "total_listings": 3389,
           "inventory_types": [
             "resale"
           ],
@@ -5890,6 +5981,18 @@
               ]
             },
             {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 19,
+              "rows": [
+                "D",
+                "E",
+                "F",
+                "J",
+                "K"
+              ]
+            },
+            {
               "name": "F21",
               "group": "Field Box",
               "listings": 19,
@@ -5939,6 +6042,18 @@
               ]
             },
             {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "a"
+              ]
+            },
+            {
               "name": "F36",
               "group": "Field Box",
               "listings": 16,
@@ -5948,42 +6063,6 @@
                 "J",
                 "M",
                 "d"
-              ]
-            },
-            {
-              "name": "F24",
-              "group": "Field Box",
-              "listings": 16,
-              "rows": [
-                "G",
-                "K",
-                "M",
-                "d",
-                "h",
-                "m"
-              ]
-            },
-            {
-              "name": "F66",
-              "group": "Field Box",
-              "listings": 16,
-              "rows": [
-                "C",
-                "H",
-                "J",
-                "M",
-                "d"
-              ]
-            },
-            {
-              "name": "F65",
-              "group": "Field Box",
-              "listings": 15,
-              "rows": [
-                "D",
-                "E",
-                "F",
-                "K"
               ]
             },
             {
@@ -5997,14 +6076,15 @@
               ]
             },
             {
-              "name": "PB10",
-              "group": "Pavilion Box",
-              "listings": 15,
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 14,
               "rows": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "G",
+                "K",
+                "d",
+                "h",
+                "m"
               ]
             },
             {
@@ -6040,6 +6120,17 @@
               ]
             },
             {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 13,
+              "rows": [
+                "H",
+                "J",
+                "M",
+                "a"
+              ]
+            },
+            {
               "name": "PB07",
               "group": "Pavilion Box",
               "listings": 12,
@@ -6049,6 +6140,17 @@
                 "E",
                 "b",
                 "e"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "C",
+                "H",
+                "M",
+                "d"
               ]
             },
             {
@@ -6167,26 +6269,6 @@
               ]
             },
             {
-              "name": "F76",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "C",
-                "K",
-                "l"
-              ]
-            },
-            {
-              "name": "F42",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "H",
-                "J",
-                "M"
-              ]
-            },
-            {
               "name": "F12",
               "group": "Field Box",
               "listings": 10,
@@ -6246,13 +6328,13 @@
               ]
             },
             {
-              "name": "F23",
+              "name": "F76",
               "group": "Field Box",
               "listings": 8,
               "rows": [
-                "G",
-                "J",
-                "h"
+                "C",
+                "K",
+                "l"
               ]
             },
             {
@@ -6487,6 +6569,15 @@
               ]
             },
             {
+              "name": "F23",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "G",
+                "J"
+              ]
+            },
+            {
               "name": "F74",
               "group": "Field Box",
               "listings": 4,
@@ -6586,6 +6677,15 @@
               ]
             },
             {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 3,
+              "rows": [
+                "3",
+                "4"
+              ]
+            },
+            {
               "name": "F82",
               "group": "Field Box",
               "listings": 3,
@@ -6623,14 +6723,6 @@
               "listings": 2,
               "rows": [
                 "a"
-              ]
-            },
-            {
-              "name": "AP11",
-              "group": "Aura Pavilion",
-              "listings": 2,
-              "rows": [
-                "3"
               ]
             },
             {
@@ -6713,7 +6805,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 46,
+        "price": 45,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -6723,8 +6815,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -7,
-        "change_pct_7d": -13.2,
+        "change_7d": -8,
+        "change_pct_7d": -15.1,
         "trend": "act_now"
       }
     },
@@ -6776,7 +6868,7 @@
         "ticketmaster_scraped": {
           "min_price": 49,
           "max_price": 2920,
-          "total_listings": 2972,
+          "total_listings": 2958,
           "inventory_types": [
             "resale"
           ],
@@ -6951,17 +7043,6 @@
               ]
             },
             {
-              "name": "F38",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "F",
-                "H",
-                "M",
-                "aaa"
-              ]
-            },
-            {
               "name": "F69",
               "group": "Field Box",
               "listings": 14,
@@ -7026,6 +7107,17 @@
               ]
             },
             {
+              "name": "F43",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "L",
+                "a",
+                "j",
+                "m"
+              ]
+            },
+            {
               "name": "F42",
               "group": "Field Box",
               "listings": 12,
@@ -7083,16 +7175,6 @@
                 "B",
                 "E",
                 "J"
-              ]
-            },
-            {
-              "name": "F43",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "L",
-                "a",
-                "m"
               ]
             },
             {
@@ -7183,6 +7265,16 @@
                 "A",
                 "D",
                 "d"
+              ]
+            },
+            {
+              "name": "F38",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "F",
+                "H",
+                "aaa"
               ]
             },
             {
@@ -7641,7 +7733,7 @@
         "ticketmaster_scraped": {
           "min_price": 29,
           "max_price": 2396,
-          "total_listings": 3323,
+          "total_listings": 3298,
           "inventory_types": [
             "resale"
           ],
@@ -7650,7 +7742,7 @@
             {
               "name": "F39",
               "group": "Field Box",
-              "listings": 34,
+              "listings": 30,
               "rows": [
                 "A",
                 "C",
@@ -7661,8 +7753,7 @@
                 "c",
                 "d",
                 "g",
-                "h",
-                "j"
+                "h"
               ]
             },
             {
@@ -7700,6 +7791,20 @@
                 "K",
                 "M",
                 "f"
+              ]
+            },
+            {
+              "name": "PB10",
+              "group": "Pavilion Box",
+              "listings": 23,
+              "rows": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "a",
+                "b",
+                "d"
               ]
             },
             {
@@ -7741,19 +7846,6 @@
               ]
             },
             {
-              "name": "PB10",
-              "group": "Pavilion Box",
-              "listings": 21,
-              "rows": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "b",
-                "d"
-              ]
-            },
-            {
               "name": "F36",
               "group": "Field Box",
               "listings": 20,
@@ -7764,19 +7856,6 @@
                 "J",
                 "M",
                 "d"
-              ]
-            },
-            {
-              "name": "F34",
-              "group": "Field Box",
-              "listings": 20,
-              "rows": [
-                "B",
-                "D",
-                "J",
-                "a",
-                "aaa",
-                "e"
               ]
             },
             {
@@ -7842,6 +7921,18 @@
               ]
             },
             {
+              "name": "F34",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "B",
+                "D",
+                "J",
+                "a",
+                "e"
+              ]
+            },
+            {
               "name": "F70",
               "group": "Field Box",
               "listings": 16,
@@ -7887,18 +7978,6 @@
               ]
             },
             {
-              "name": "F24",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "G",
-                "K",
-                "M",
-                "d",
-                "h"
-              ]
-            },
-            {
               "name": "F50",
               "group": "Field Box",
               "listings": 14,
@@ -7931,6 +8010,17 @@
                 "B",
                 "D",
                 "K"
+              ]
+            },
+            {
+              "name": "F24",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "G",
+                "K",
+                "M",
+                "h"
               ]
             },
             {
@@ -8049,6 +8139,17 @@
               ]
             },
             {
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 9,
+              "rows": [
+                "B",
+                "D",
+                "E",
+                "e"
+              ]
+            },
+            {
               "name": "F32",
               "group": "Field Box",
               "listings": 8,
@@ -8117,27 +8218,6 @@
               ]
             },
             {
-              "name": "PB07",
-              "group": "Pavilion Box",
-              "listings": 8,
-              "rows": [
-                "B",
-                "D",
-                "E",
-                "e"
-              ]
-            },
-            {
-              "name": "F62",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "E",
-                "H",
-                "d"
-              ]
-            },
-            {
               "name": "F41",
               "group": "Field Box",
               "listings": 8,
@@ -8154,6 +8234,25 @@
               "rows": [
                 "B",
                 "f"
+              ]
+            },
+            {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 7,
+              "rows": [
+                "M",
+                "a"
+              ]
+            },
+            {
+              "name": "F62",
+              "group": "Field Box",
+              "listings": 7,
+              "rows": [
+                "E",
+                "H",
+                "d"
               ]
             },
             {
@@ -8315,14 +8414,6 @@
               "listings": 4,
               "rows": [
                 "L"
-              ]
-            },
-            {
-              "name": "F42",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "M"
               ]
             },
             {
@@ -8572,7 +8663,7 @@
         "ticketmaster_scraped": {
           "min_price": 31,
           "max_price": 1903,
-          "total_listings": 3312,
+          "total_listings": 3305,
           "inventory_types": [
             "resale"
           ],
@@ -8795,17 +8886,6 @@
               ]
             },
             {
-              "name": "F16",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "A",
-                "B",
-                "E",
-                "J"
-              ]
-            },
-            {
               "name": "F38",
               "group": "Field Box",
               "listings": 12,
@@ -8868,6 +8948,16 @@
               ]
             },
             {
+              "name": "F16",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "A",
+                "B",
+                "J"
+              ]
+            },
+            {
               "name": "F53",
               "group": "Field Box",
               "listings": 10,
@@ -8906,6 +8996,16 @@
                 "D",
                 "E",
                 "e"
+              ]
+            },
+            {
+              "name": "F42",
+              "group": "Field Box",
+              "listings": 9,
+              "rows": [
+                "J",
+                "M",
+                "a"
               ]
             },
             {
@@ -9051,15 +9151,6 @@
               "rows": [
                 "E",
                 "l"
-              ]
-            },
-            {
-              "name": "F42",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "J",
-                "M"
               ]
             },
             {
@@ -9491,16 +9582,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 38,
+          "min_price": 34,
           "max_price": 2518,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FP",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 38,
+          "min_price": 34,
           "max_price": 2518,
-          "total_listings": 3306,
+          "total_listings": 3313,
           "inventory_types": [
             "resale"
           ],
@@ -9544,16 +9635,6 @@
                 "B",
                 "C",
                 "E"
-              ]
-            },
-            {
-              "name": "PB11",
-              "group": "Pavilion Box",
-              "listings": 19,
-              "rows": [
-                "A",
-                "B",
-                "C"
               ]
             },
             {
@@ -9606,6 +9687,16 @@
                 "H",
                 "J",
                 "c"
+              ]
+            },
+            {
+              "name": "PB11",
+              "group": "Pavilion Box",
+              "listings": 17,
+              "rows": [
+                "A",
+                "B",
+                "C"
               ]
             },
             {
@@ -9861,13 +9952,13 @@
               ]
             },
             {
-              "name": "F64",
+              "name": "F42",
               "group": "Field Box",
               "listings": 9,
               "rows": [
-                "E",
                 "J",
-                "L"
+                "M",
+                "a"
               ]
             },
             {
@@ -9966,6 +10057,16 @@
               ]
             },
             {
+              "name": "F64",
+              "group": "Field Box",
+              "listings": 7,
+              "rows": [
+                "E",
+                "J",
+                "L"
+              ]
+            },
+            {
               "name": "F23",
               "group": "Field Box",
               "listings": 6,
@@ -9981,15 +10082,6 @@
               "rows": [
                 "G",
                 "K"
-              ]
-            },
-            {
-              "name": "F42",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "J",
-                "M"
               ]
             },
             {
@@ -10333,7 +10425,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 38,
+        "price": 34,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -10343,8 +10435,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -3,
-        "change_pct_7d": -7.3,
+        "change_7d": -7,
+        "change_pct_7d": -17.1,
         "trend": "act_now"
       }
     },
@@ -10356,16 +10448,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 28,
+          "min_price": 25,
           "max_price": 1475,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FJ",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 28,
+          "min_price": 25,
           "max_price": 1475,
-          "total_listings": 3280,
+          "total_listings": 3311,
           "inventory_types": [
             "resale"
           ],
@@ -10374,12 +10466,13 @@
             {
               "name": "F39",
               "group": "Field Box",
-              "listings": 25,
+              "listings": 27,
               "rows": [
                 "A",
                 "C",
                 "D",
                 "J",
+                "L",
                 "M",
                 "c",
                 "g",
@@ -10422,7 +10515,7 @@
                 "F",
                 "G",
                 "J",
-                "L",
+                "K",
                 "c",
                 "m"
               ]
@@ -10650,17 +10743,6 @@
               ]
             },
             {
-              "name": "F65",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "D",
-                "F",
-                "J",
-                "K"
-              ]
-            },
-            {
               "name": "F38",
               "group": "Field Box",
               "listings": 12,
@@ -10794,6 +10876,16 @@
               "listings": 8,
               "rows": [
                 "C",
+                "J",
+                "K"
+              ]
+            },
+            {
+              "name": "F65",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "D",
                 "J",
                 "K"
               ]
@@ -11223,7 +11315,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 28,
+        "price": 25,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -11233,8 +11325,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -9,
-        "change_pct_7d": -24.3,
+        "change_7d": -12,
+        "change_pct_7d": -32.4,
         "trend": "act_now"
       }
     },
@@ -11255,7 +11347,7 @@
         "ticketmaster_scraped": {
           "min_price": 32,
           "max_price": 1475,
-          "total_listings": 3164,
+          "total_listings": 3154,
           "inventory_types": [
             "resale"
           ],
@@ -12125,35 +12217,21 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 43,
+          "min_price": 45,
           "max_price": 1654,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FI",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 43,
+          "min_price": 45,
           "max_price": 1654,
-          "total_listings": 2975,
+          "total_listings": 3006,
           "inventory_types": [
             "resale"
           ],
           "source": "ticketmaster_scraped",
           "sections": [
-            {
-              "name": "F39",
-              "group": "Field Box",
-              "listings": 26,
-              "rows": [
-                "A",
-                "C",
-                "D",
-                "J",
-                "K",
-                "L",
-                "c"
-              ]
-            },
             {
               "name": "PB08",
               "group": "Pavilion Box",
@@ -12167,16 +12245,16 @@
               ]
             },
             {
-              "name": "F36",
+              "name": "F39",
               "group": "Field Box",
-              "listings": 20,
+              "listings": 23,
               "rows": [
                 "A",
-                "B",
-                "E",
-                "H",
+                "C",
+                "D",
                 "J",
-                "d"
+                "K",
+                "c"
               ]
             },
             {
@@ -12190,6 +12268,19 @@
               ]
             },
             {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "H",
+                "J",
+                "d"
+              ]
+            },
+            {
               "name": "F52",
               "group": "Field Box",
               "listings": 18,
@@ -12200,6 +12291,18 @@
                 "J",
                 "K",
                 "L"
+              ]
+            },
+            {
+              "name": "F14",
+              "group": "Field Box",
+              "listings": 18,
+              "rows": [
+                "B",
+                "D",
+                "L",
+                "M",
+                "f"
               ]
             },
             {
@@ -12285,17 +12388,6 @@
               ]
             },
             {
-              "name": "F14",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "B",
-                "D",
-                "L",
-                "f"
-              ]
-            },
-            {
               "name": "F60",
               "group": "Field Box",
               "listings": 14,
@@ -12370,6 +12462,17 @@
                 "B",
                 "H",
                 "J"
+              ]
+            },
+            {
+              "name": "F58",
+              "group": "Field Box",
+              "listings": 12,
+              "rows": [
+                "C",
+                "a",
+                "f",
+                "h"
               ]
             },
             {
@@ -12478,16 +12581,6 @@
               ]
             },
             {
-              "name": "F58",
-              "group": "Field Box",
-              "listings": 8,
-              "rows": [
-                "C",
-                "f",
-                "h"
-              ]
-            },
-            {
               "name": "F24",
               "group": "Field Box",
               "listings": 8,
@@ -12525,6 +12618,16 @@
                 "B",
                 "E",
                 "e"
+              ]
+            },
+            {
+              "name": "F57",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "J",
+                "K",
+                "g"
               ]
             },
             {
@@ -12607,15 +12710,6 @@
               "rows": [
                 "B",
                 "G"
-              ]
-            },
-            {
-              "name": "F57",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "J",
-                "g"
               ]
             },
             {
@@ -12853,14 +12947,6 @@
               ]
             },
             {
-              "name": "F35",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "M"
-              ]
-            },
-            {
               "name": "F53",
               "group": "Field Box",
               "listings": 2,
@@ -12957,6 +13043,30 @@
               ]
             },
             {
+              "name": "F10",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "c"
+              ]
+            },
+            {
+              "name": "F35",
+              "group": "Field Box",
+              "listings": 2,
+              "rows": [
+                "M"
+              ]
+            },
+            {
+              "name": "AP09",
+              "group": "Aura Pavilion",
+              "listings": 2,
+              "rows": [
+                "2"
+              ]
+            },
+            {
               "name": "F32",
               "group": "Field Box",
               "listings": 2,
@@ -12972,7 +13082,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 43,
+        "price": 45,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -12982,8 +13092,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -6,
-        "change_pct_7d": -12.2,
+        "change_7d": -4,
+        "change_pct_7d": -8.2,
         "trend": "act_now"
       }
     },
@@ -12995,16 +13105,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 62,
+          "min_price": 59,
           "max_price": 1663,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Ft",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 62,
+          "min_price": 59,
           "max_price": 1663,
-          "total_listings": 3188,
+          "total_listings": 3402,
           "inventory_types": [
             "resale"
           ],
@@ -13045,6 +13155,18 @@
                 "K",
                 "M",
                 "c"
+              ]
+            },
+            {
+              "name": "PB03",
+              "group": "Pavilion Box",
+              "listings": 20,
+              "rows": [
+                "A",
+                "B",
+                "D",
+                "E",
+                "a"
               ]
             },
             {
@@ -13105,6 +13227,18 @@
                 "C",
                 "D",
                 "E"
+              ]
+            },
+            {
+              "name": "F66",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "C",
+                "E",
+                "F",
+                "H",
+                "J"
               ]
             },
             {
@@ -13190,17 +13324,6 @@
                 "E",
                 "c",
                 "e"
-              ]
-            },
-            {
-              "name": "PB03",
-              "group": "Pavilion Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "B",
-                "E",
-                "a"
               ]
             },
             {
@@ -13291,17 +13414,6 @@
               ]
             },
             {
-              "name": "F66",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "C",
-                "F",
-                "H",
-                "J"
-              ]
-            },
-            {
               "name": "F53",
               "group": "Field Box",
               "listings": 10,
@@ -13384,6 +13496,16 @@
                 "F",
                 "K",
                 "g"
+              ]
+            },
+            {
+              "name": "F25",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "F",
+                "H",
+                "K"
               ]
             },
             {
@@ -13523,15 +13645,6 @@
               "rows": [
                 "C",
                 "L"
-              ]
-            },
-            {
-              "name": "F25",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "F",
-                "H"
               ]
             },
             {
@@ -13849,7 +13962,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 62,
+        "price": 59,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -13859,8 +13972,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -2,
-        "change_pct_7d": -3.1,
+        "change_7d": -5,
+        "change_pct_7d": -7.8,
         "trend": "act_now"
       }
     },
@@ -13881,7 +13994,7 @@
         "ticketmaster_scraped": {
           "min_price": 70,
           "max_price": 2790,
-          "total_listings": 3176,
+          "total_listings": 3197,
           "inventory_types": [
             "resale"
           ],
@@ -13962,18 +14075,6 @@
                 "J",
                 "L",
                 "m"
-              ]
-            },
-            {
-              "name": "F60",
-              "group": "Field Box",
-              "listings": 16,
-              "rows": [
-                "C",
-                "E",
-                "G",
-                "H",
-                "J"
               ]
             },
             {
@@ -14065,6 +14166,17 @@
                 "G",
                 "H",
                 "a"
+              ]
+            },
+            {
+              "name": "F60",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "C",
+                "E",
+                "H",
+                "J"
               ]
             },
             {
@@ -14429,15 +14541,6 @@
               ]
             },
             {
-              "name": "F62",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "E",
-                "H"
-              ]
-            },
-            {
               "name": "F25",
               "group": "Field Box",
               "listings": 6,
@@ -14558,6 +14661,14 @@
               "listings": 4,
               "rows": [
                 "B"
+              ]
+            },
+            {
+              "name": "F62",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "H"
               ]
             },
             {
@@ -14785,7 +14896,7 @@
         "ticketmaster_scraped": {
           "min_price": 66,
           "max_price": 1385,
-          "total_listings": 3268,
+          "total_listings": 3290,
           "inventory_types": [
             "resale"
           ],
@@ -15262,6 +15373,15 @@
               ]
             },
             {
+              "name": "F72",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "b"
+              ]
+            },
+            {
               "name": "F11",
               "group": "Field Box",
               "listings": 8,
@@ -15480,14 +15600,6 @@
               ]
             },
             {
-              "name": "F72",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "C"
-              ]
-            },
-            {
               "name": "F10",
               "group": "Field Box",
               "listings": 4,
@@ -15595,14 +15707,6 @@
               ]
             },
             {
-              "name": "AP10",
-              "group": "Aura Pavilion",
-              "listings": 2,
-              "rows": [
-                "2"
-              ]
-            },
-            {
               "name": "AP01",
               "group": "Aura Pavilion",
               "listings": 2,
@@ -15697,16 +15801,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 44,
+          "min_price": 43,
           "max_price": 4953,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fw",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 44,
+          "min_price": 43,
           "max_price": 4953,
-          "total_listings": 3328,
+          "total_listings": 3359,
           "inventory_types": [
             "resale"
           ],
@@ -15715,7 +15819,7 @@
             {
               "name": "F39",
               "group": "Field Box",
-              "listings": 29,
+              "listings": 31,
               "rows": [
                 "A",
                 "C",
@@ -15723,6 +15827,7 @@
                 "J",
                 "K",
                 "M",
+                "c",
                 "g",
                 "h",
                 "j"
@@ -16013,9 +16118,9 @@
               "rows": [
                 "C",
                 "G",
-                "J",
                 "K",
-                "b"
+                "b",
+                "j"
               ]
             },
             {
@@ -16562,7 +16667,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 44,
+        "price": 43,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -16572,8 +16677,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -2,
-        "change_pct_7d": -4.3,
+        "change_7d": -3,
+        "change_pct_7d": -6.5,
         "trend": "act_now"
       }
     },
@@ -16594,7 +16699,7 @@
         "ticketmaster_scraped": {
           "min_price": 44,
           "max_price": 3893,
-          "total_listings": 3389,
+          "total_listings": 3403,
           "inventory_types": [
             "resale"
           ],
@@ -17027,6 +17132,16 @@
               ]
             },
             {
+              "name": "F22",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "F",
+                "d"
+              ]
+            },
+            {
               "name": "F12",
               "group": "Field Box",
               "listings": 8,
@@ -17099,16 +17214,6 @@
                 "B",
                 "e",
                 "l"
-              ]
-            },
-            {
-              "name": "F22",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "C",
-                "F",
-                "d"
               ]
             },
             {
@@ -17475,7 +17580,7 @@
         "ticketmaster_scraped": {
           "min_price": 52,
           "max_price": 2892,
-          "total_listings": 3025,
+          "total_listings": 3017,
           "inventory_types": [
             "resale"
           ],
@@ -17782,17 +17887,6 @@
               ]
             },
             {
-              "name": "F47",
-              "group": "Field Box",
-              "listings": 10,
-              "rows": [
-                "C",
-                "G",
-                "J",
-                "K"
-              ]
-            },
-            {
               "name": "F18",
               "group": "Field Box",
               "listings": 10,
@@ -17849,6 +17943,16 @@
               "rows": [
                 "G",
                 "H"
+              ]
+            },
+            {
+              "name": "F47",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "C",
+                "G",
+                "K"
               ]
             },
             {
@@ -18284,14 +18388,6 @@
               ]
             },
             {
-              "name": "F29",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "D"
-              ]
-            },
-            {
               "name": "AP07",
               "group": "Aura Pavilion",
               "listings": 2,
@@ -18379,7 +18475,7 @@
         "ticketmaster_scraped": {
           "min_price": 108,
           "max_price": 3058,
-          "total_listings": 3468,
+          "total_listings": 3469,
           "inventory_types": [
             "resale"
           ],
@@ -18845,6 +18941,15 @@
               ]
             },
             {
+              "name": "F70",
+              "group": "Field Box",
+              "listings": 8,
+              "rows": [
+                "D",
+                "L"
+              ]
+            },
+            {
               "name": "F43",
               "group": "Field Box",
               "listings": 7,
@@ -18918,16 +19023,6 @@
               ]
             },
             {
-              "name": "F46",
-              "group": "Field Box",
-              "listings": 6,
-              "rows": [
-                "M",
-                "f",
-                "l"
-              ]
-            },
-            {
               "name": "F71",
               "group": "Field Box",
               "listings": 6,
@@ -18962,14 +19057,6 @@
               "rows": [
                 "2",
                 "3"
-              ]
-            },
-            {
-              "name": "F70",
-              "group": "Field Box",
-              "listings": 5,
-              "rows": [
-                "L"
               ]
             },
             {
@@ -19072,6 +19159,15 @@
               "listings": 4,
               "rows": [
                 "E"
+              ]
+            },
+            {
+              "name": "F46",
+              "group": "Field Box",
+              "listings": 4,
+              "rows": [
+                "M",
+                "f"
               ]
             },
             {
@@ -19236,14 +19332,6 @@
               "rows": [
                 "c"
               ]
-            },
-            {
-              "name": "F9",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "a"
-              ]
             }
           ]
         }
@@ -19276,16 +19364,16 @@
       "is_preferred_day": false,
       "tickets": {
         "ticketmaster": {
-          "min_price": 114,
+          "min_price": 115,
           "max_price": 14847,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8FU",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 114,
+          "min_price": 115,
           "max_price": 14847,
-          "total_listings": 4234,
+          "total_listings": 4226,
           "inventory_types": [
             "resale"
           ],
@@ -19444,6 +19532,18 @@
               ]
             },
             {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 16,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "J",
+                "d"
+              ]
+            },
+            {
               "name": "F21",
               "group": "Field Box",
               "listings": 15,
@@ -19464,18 +19564,6 @@
                 "B",
                 "C",
                 "D"
-              ]
-            },
-            {
-              "name": "F36",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "A",
-                "B",
-                "E",
-                "J",
-                "d"
               ]
             },
             {
@@ -19836,6 +19924,16 @@
               ]
             },
             {
+              "name": "F74",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "J",
+                "K"
+              ]
+            },
+            {
               "name": "F57",
               "group": "Field Box",
               "listings": 6,
@@ -19951,15 +20049,6 @@
               "rows": [
                 "K",
                 "j"
-              ]
-            },
-            {
-              "name": "F74",
-              "group": "Field Box",
-              "listings": 4,
-              "rows": [
-                "D",
-                "J"
               ]
             },
             {
@@ -20187,7 +20276,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 114,
+        "price": 115,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -20197,8 +20286,8 @@
       },
       "velocity": {
         "direction": "falling",
-        "change_7d": -19,
-        "change_pct_7d": -14.3,
+        "change_7d": -18,
+        "change_pct_7d": -13.5,
         "trend": "good_time_to_buy"
       }
     },
@@ -20219,7 +20308,7 @@
         "ticketmaster_scraped": {
           "min_price": 152,
           "max_price": 3317,
-          "total_listings": 3436,
+          "total_listings": 3446,
           "inventory_types": [
             "resale"
           ],
@@ -20358,6 +20447,18 @@
               ]
             },
             {
+              "name": "F50",
+              "group": "Field Box",
+              "listings": 14,
+              "rows": [
+                "G",
+                "J",
+                "K",
+                "L",
+                "m"
+              ]
+            },
+            {
               "name": "F24",
               "group": "Field Box",
               "listings": 14,
@@ -20422,17 +20523,6 @@
                 "F",
                 "K",
                 "g"
-              ]
-            },
-            {
-              "name": "F50",
-              "group": "Field Box",
-              "listings": 12,
-              "rows": [
-                "G",
-                "J",
-                "K",
-                "L"
               ]
             },
             {
@@ -20986,16 +21076,16 @@
       "is_preferred_day": true,
       "tickets": {
         "ticketmaster": {
-          "min_price": 127,
+          "min_price": 124,
           "max_price": 10934,
           "listing_url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Q8Fz",
           "source": "primary"
         },
         "seatgeek": null,
         "ticketmaster_scraped": {
-          "min_price": 127,
+          "min_price": 124,
           "max_price": 10934,
-          "total_listings": 3596,
+          "total_listings": 3609,
           "inventory_types": [
             "resale"
           ],
@@ -21611,6 +21701,15 @@
               ]
             },
             {
+              "name": "AP11",
+              "group": "Aura Pavilion",
+              "listings": 6,
+              "rows": [
+                "1",
+                "4"
+              ]
+            },
+            {
               "name": "F64",
               "group": "Field Box",
               "listings": 5,
@@ -21775,14 +21874,6 @@
               ]
             },
             {
-              "name": "AP11",
-              "group": "Aura Pavilion",
-              "listings": 4,
-              "rows": [
-                "4"
-              ]
-            },
-            {
               "name": "F82",
               "group": "Field Box",
               "listings": 3,
@@ -21919,19 +22010,19 @@
               ]
             },
             {
-              "name": "AC02",
-              "group": "Aura Club",
-              "listings": 2,
-              "rows": [
-                "4"
-              ]
-            },
-            {
               "name": "AP13",
               "group": "Aura Pavilion",
               "listings": 2,
               "rows": [
                 "5"
+              ]
+            },
+            {
+              "name": "AC02",
+              "group": "Aura Club",
+              "listings": 2,
+              "rows": [
+                "4"
               ]
             }
           ]
@@ -21942,7 +22033,7 @@
         "sold_out": false
       },
       "best_available": {
-        "price": 127,
+        "price": 124,
         "source": "ticketmaster",
         "is_primary": true
       },
@@ -21974,7 +22065,7 @@
         "ticketmaster_scraped": {
           "min_price": 35,
           "max_price": 2020,
-          "total_listings": 3326,
+          "total_listings": 3300,
           "inventory_types": [
             "resale"
           ],
@@ -22026,20 +22117,6 @@
               ]
             },
             {
-              "name": "F36",
-              "group": "Field Box",
-              "listings": 24,
-              "rows": [
-                "A",
-                "B",
-                "E",
-                "H",
-                "J",
-                "M",
-                "d"
-              ]
-            },
-            {
               "name": "F21",
               "group": "Field Box",
               "listings": 22,
@@ -22064,6 +22141,19 @@
                 "d",
                 "e",
                 "g"
+              ]
+            },
+            {
+              "name": "F36",
+              "group": "Field Box",
+              "listings": 20,
+              "rows": [
+                "A",
+                "B",
+                "E",
+                "H",
+                "M",
+                "d"
               ]
             },
             {
@@ -22151,7 +22241,7 @@
                 "E",
                 "F",
                 "G",
-                "L",
+                "K",
                 "m"
               ]
             },
@@ -22215,17 +22305,6 @@
               ]
             },
             {
-              "name": "F20",
-              "group": "Field Box",
-              "listings": 14,
-              "rows": [
-                "E",
-                "F",
-                "J",
-                "M"
-              ]
-            },
-            {
               "name": "PB04",
               "group": "Pavilion Box",
               "listings": 14,
@@ -22245,17 +22324,6 @@
                 "J",
                 "M",
                 "aaa"
-              ]
-            },
-            {
-              "name": "PB07",
-              "group": "Pavilion Box",
-              "listings": 13,
-              "rows": [
-                "B",
-                "D",
-                "E",
-                "e"
               ]
             },
             {
@@ -22393,6 +22461,16 @@
               ]
             },
             {
+              "name": "F20",
+              "group": "Field Box",
+              "listings": 10,
+              "rows": [
+                "E",
+                "J",
+                "M"
+              ]
+            },
+            {
               "name": "F56",
               "group": "Field Box",
               "listings": 10,
@@ -22434,13 +22512,14 @@
               ]
             },
             {
-              "name": "F32",
-              "group": "Field Box",
-              "listings": 8,
+              "name": "PB07",
+              "group": "Pavilion Box",
+              "listings": 10,
               "rows": [
-                "C",
+                "B",
                 "D",
-                "E"
+                "E",
+                "e"
               ]
             },
             {
@@ -22509,6 +22588,15 @@
               "rows": [
                 "A",
                 "B"
+              ]
+            },
+            {
+              "name": "F32",
+              "group": "Field Box",
+              "listings": 6,
+              "rows": [
+                "D",
+                "E"
               ]
             },
             {
@@ -22876,7 +22964,7 @@
         "ticketmaster_scraped": {
           "min_price": 37,
           "max_price": 4419,
-          "total_listings": 3442,
+          "total_listings": 3415,
           "inventory_types": [
             "resale"
           ],
@@ -22955,7 +23043,7 @@
               "rows": [
                 "A",
                 "B",
-                "D",
+                "C",
                 "c"
               ]
             },
@@ -23014,7 +23102,7 @@
                 "E",
                 "F",
                 "G",
-                "L",
+                "K",
                 "m"
               ]
             },
@@ -23664,14 +23752,6 @@
               ]
             },
             {
-              "name": "F45",
-              "group": "Field Box",
-              "listings": 2,
-              "rows": [
-                "a"
-              ]
-            },
-            {
               "name": "FCLUB 54",
               "group": "Field Box",
               "listings": 2,
@@ -23775,7 +23855,7 @@
         "ticketmaster_scraped": {
           "min_price": 58,
           "max_price": 4953,
-          "total_listings": 3501,
+          "total_listings": 3495,
           "inventory_types": [
             "resale"
           ],
